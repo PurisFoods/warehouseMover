@@ -34,7 +34,7 @@ function App() {
     if (bcData) {
       console.log(bcData);
     }
-  })
+  },[bcData]);
 
   return (
   <div className='primaryContainer'>

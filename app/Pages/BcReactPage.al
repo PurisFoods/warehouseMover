@@ -38,6 +38,8 @@ page 50260 "WarehouseMover"
                     if binContentData.FindSet() then begin
                         refRecord.GetTable(binContentData);
                         jsonArray := JsonHelper.RecordToJsonArray(refRecord);
+
+                        Message('JSON: %1', jsonArray);
                         CurrPage.WarehouseMover.SendDataToReact(jsonArray);
 
 

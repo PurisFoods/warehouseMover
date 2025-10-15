@@ -28,10 +28,14 @@ codeunit 50260 JsonHelper
                     JsonObj += '"' + FieldRef.Name + '":';
 
                     case FieldRef.Type of
+                        FieldType::Boolean:
+                            if FieldRef.Value then
+                                JsonObj += 'true'
+                            else
+                                JsonObj += 'false';
                         FieldType::Integer,
                         FieldType::BigInteger,
-                        FieldType::Decimal,
-                        FieldType::Boolean:
+                        FieldType::Decimal:
                             JsonObj += Format(FieldRef.Value);
                         else
                             JsonObj += '"' + EscapeString(Format(FieldRef.Value)) + '"';
@@ -47,12 +51,13 @@ codeunit 50260 JsonHelper
     end;
 
     local procedure EscapeString(Value: Text): Text
-    var
-        Result: Text;
     begin
-        Result := Value;
-        Result := StrSubstNo(Result, '\', '\\');
+        Value := StrSubstNo(Value, '\', '\\');   // escape backslash first
+        Value := StrSubstNo(Value, '"', '\"');   // escape double quotes
+        Value := StrSubstNo(Value, '\n', '\\n'); // escape newlines
+        Value := StrSubstNo(Value, '\r', '\\r'); // escape carriage returns
+        Value := StrSubstNo(Value, '\t', '\\t'); // escape tabs
+        exit(Value);
     end;
-
 
 }

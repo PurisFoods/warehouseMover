@@ -31,6 +31,7 @@ page 50260 "WarehouseMover"
                 var
                     JsonHelper: Codeunit JsonHelper;
                     binContentData: Record "Bin Content";
+                    customerData: Record Customer;
                     refRecord: RecordRef;
                     jsonArray: Text;
                 begin

@@ -1,69 +1,54 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { DndContext } from '@dnd-kit/core';
 
-//Fluent UI
-import { Button, MenuList } from '@fluentui/react-components';
-import { CompoundButton } from '@fluentui/react-components';
-import { Menu, MenuButton, MenuItem, MenuPopover, MenuTrigger } from '@fluentui/react-components';
+//Types
+import type { DragEndEvent } from '@dnd-kit/core';
+import type { ReactNode } from 'react';
 
-import './App.css'
+//Components
+import { Draggable } from './components/Draggable';
+import { Droppable } from './components/Droppable';
+// import './App.css'
+
+interface BCDataType {
+  [key: string]: any;
+}
 
 function App() {
-  const [bcData, setBcData] = useState<any>(null);
-  
-  const handleButton = () => {
-    console.log('Clickety Click');
-  }
-
-  const handleOptionA = (text: string) => {
-    console.log('Option A', text);
-    if (Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod) {
-      Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ReceiveDataFromReact', [text]);
+  const [bcData, setBcData] = useState<BCDataType | null>(null);
+  const [isDropped, setIsDropped] = useState<boolean>(false);
+  const draggableMarkup: ReactNode = (<Draggable>Drag Me</Draggable>);
+ 
+  const handleDragEnd = (event: DragEndEvent): void => {
+    if (event.over && event.over.id === 'droppable') {
+      setIsDropped(true);
     }
   }
 
   useEffect(() => {
-    const handler = (e: any) => setBcData(e.detail);
+    const handler = (e: Event): void => {
+      const customEvent = e as CustomEvent;
+      setBcData(customEvent.detail);
+    };
     window.addEventListener('BCData', handler);
-
     return () => {
       window.removeEventListener('BCData', handler);
     }
-  });
+  }, []);
 
   useEffect(() => {
     if (bcData) {
       console.log(bcData);
     }
-  },[bcData]);
+  }, [bcData]);
 
   return (
-  <div className='primaryContainer'>
-    <div className='buttonContainer'>
-
-    <Button onClick={handleButton} appearance='outline'
-      style={{padding: "0.5em"}}
-    >Click Me</Button>
-
-    <CompoundButton onClick={handleButton} 
-    secondaryContent='Secondary Content'
-    appearance='outline'
-    >Compound Button</CompoundButton>
-
-    <Menu>
-      <MenuTrigger disableButtonEnhancement>
-        <MenuButton>Menu Button</MenuButton>
-      </MenuTrigger>
-      <MenuPopover>
-        <MenuList>
-          <MenuItem onClick={() => handleOptionA('Option Aaaaaaaaaaaaa')}>Option A</MenuItem>
-          <MenuItem>Option B</MenuItem>
-
-        </MenuList>
-      </MenuPopover>
-    </Menu>
-    </div>
-  </div>
+    <DndContext onDragEnd={handleDragEnd}>
+      {!isDropped ? draggableMarkup : null}
+      <Droppable>
+        {isDropped ? draggableMarkup : 'Drop Here'}
+      </Droppable>
+    </DndContext>
   )
 }
-
 export default App

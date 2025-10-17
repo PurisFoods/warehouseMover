@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { FluentProvider, webLightTheme } from '@fluentui/react-components';
 
 
-import App from './App.tsx'
+import App from './App.js'
 
 const rootElementId = (window.self !== window.top)
   ? "controlAddIn"

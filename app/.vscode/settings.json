@@ -1,0 +1,7 @@
+{    "telemetry.feedback.enabled": false,
+    "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": false,
+    "github.copilot.chat.edits.suggestRelatedFilesForTests": false,
+    "github.copilot.chat.edits.newNotebook.enabled": false,
+    "github.copilot.renameSuggestions.triggerAutomatically": false,
+    "editor.codeLens": false
+}

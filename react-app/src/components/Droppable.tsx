@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { useDroppable } from "@dnd-kit/core";
 
 
@@ -12,7 +12,7 @@ export const Droppable: React.FC<DroppableProps> = ({children, id = 'droppable'}
         'id': id,
     });
 
-    const style = {
+    const style:any = {
         color: isOver ? 'green' : undefined,
         width: '200px',
         height: '200px',

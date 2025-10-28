@@ -116,6 +116,7 @@ page 50260 "WarehouseMover"
                 begin
                     refRecord.GetTable(purisUsers);
                     jsonArray := JsonHelper.RecordToJsonArray(refRecord);
+
                     CurrPage.WarehouseMover.SendDataToReact(jsonArray);
 
 

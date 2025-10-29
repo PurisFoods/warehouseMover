@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import type { JSX } from 'react';
 // import { DndContext } from '@dnd-kit/core';
 
 // //Types
@@ -8,14 +9,14 @@ import { useState, useEffect } from 'react';
 // //Components
 // import { Draggable } from './components/Draggable';
 // import { Droppable } from './components/Droppable';
-// import './App.css'
+import './App.css';
 
 interface BCDataType {
   [key: string]: any;
 }
 
 function App() {
-  const [bcData, setBcData] = useState<BCDataType[]>([]);
+  const [bcData, setBcData] = useState<any>([]);
   // const [isDropped, setIsDropped] = useState<boolean>(false);
   // const draggableMarkup: ReactNode = (<Draggable>Drag Me</Draggable>);
  
@@ -50,7 +51,7 @@ function App() {
       'UserName': "reactUser",
       'data1': "HiFromReact"
     }
-    setBcData((prevState: BCDataType[]) => [...prevState, newItem]);
+    setBcData((prevState: any[]) => [...prevState, newItem]);
   }
 
   const testMessage = () => {
@@ -58,22 +59,58 @@ function App() {
     Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('ReceiveDataFromReact', ['This is the message'])
   }
 
+  const handleSalesPage = () => {
+    Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GoToPage', [1]);
+  }
+
+  const getTableData = (tableNumber: Number) => {
+    Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GetTable', [tableNumber]);
+  }
+
   return (
     <div className='primaryContainer'>
       <h5>BCinReact</h5>
+            <div className='buttonContainer'>
+        <button onClick={handleAddLine}>Add Line</button>
+        <button onClick={sendDataToBC}>Send Data to BC</button>
+        <button onClick={testMessage}>Test Message</button>
+        <button onClick={() => getTableData(50260)}>Get Table Data Puris Users</button>
+        <button onClick={() => getTableData(27)}>Get Sales Lines</button>
+      </div>
+      <div className='buttonContainer'>
+        <button onClick={handleSalesPage}>Sales Orders</button>
+      </div>
+    
+<div className='secondaryContainer'>
       <ul>
         {bcData.length > 0 ? (
-          bcData.map((item: BCDataType, index: number) => (
-            <li key={index}>{item.UserName} - {item.data1} - {item.data2}</li>
-          ))
+          bcData.map((item: any, index: number) => {
+            const values: any[] = Object.values(item.fields).slice(0, 5);
+            return (
+              <li key={index}>
+                {values.map((val: string | number | boolean, i: number) => (
+                  <span key={i}>{String(val)}</span>
+                )).reduce((prev: JSX.Element, curr: JSX.Element) => (
+                  <>
+                    {prev} - {curr}
+                  </>
+                ))}
+              </li>
+            );
+          })
         ) : (
           <li>No data received</li>
         )}
       </ul>
-      <button onClick={handleAddLine}>Add Line</button>
-      <button onClick={sendDataToBC}>Send Data to BC</button>
-      <button onClick={testMessage}>Test Message</button>
-    </div>
+      {bcData && 
+        <pre className='jsonBox'>
+          {JSON.stringify(bcData, null, 2)}
+        </pre>
+        }
+        </div>
+
+</div>
+
     // <DndContext onDragEnd={handleDragEnd}>
     //   {!isDropped ? draggableMarkup : null}
     //   <Droppable>

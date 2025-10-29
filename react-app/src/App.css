@@ -7,10 +7,22 @@
 
 .primaryContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.secondaryContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 
 .buttonContainer {
   padding: 0.2em;
-  border: 1px solid pink;
+  margin: 0.2em;
+}
+
+.jsonBox {
+  margin: 0.2em;
+  color: black;
+  font-size: large;
 }

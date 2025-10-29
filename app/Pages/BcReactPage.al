@@ -91,8 +91,31 @@ page 50260 "WarehouseMover"
                         else
                             exit;
                     end;
+                end;
+
+                trigger GetTable(tableNumber: Integer)
+                var
+                    RecRef: RecordRef;
+                    jsonHelper: Codeunit JsonHelper;
+                    jsonReader: Codeunit "Json Text Reader/Writer";
+                    json: Codeunit Json;
+                    rec: Variant;
+                    jsonManage: Codeunit "JSON Management";
+                    data: Text;
+                    jsonArray: JsonArray;
+                begin
+                    RecRef.Open(tableNumber);
+                    if RecRef.FindSet() then begin
+                        repeat
+                            jsonArray.Add(jsonHelper.RecordToJson(RecRef));
+                        until RecRef.Next() = 0;
+                    end;
+                    jsonArray.WriteTo(data);
+
+                    CurrPage.WarehouseMover.SendDataToReact(data);
 
                 end;
+
 
             }
         }
@@ -111,15 +134,29 @@ page 50260 "WarehouseMover"
                 var
                     JsonHelper: Codeunit JsonHelper;
                     purisUsers: Record PurisUsers;
-                    refRecord: RecordRef;
+                    tableSelection: RecordRef;
+                    RecRef: RecordRef;
                     jsonArray: Text;
                 begin
-                    refRecord.GetTable(purisUsers);
-                    jsonArray := JsonHelper.RecordToJsonArray(refRecord);
+                    tableSelection.Open(Database::PurisUsers);
+                    RecRef.Open(Database::PurisUsers);
+                    // jsonArray := JsonHelper.RecordToJsonArray(RecRef);
 
                     CurrPage.WarehouseMover.SendDataToReact(jsonArray);
+                end;
+            }
+            action(DeleteRecords)
+            {
+                ApplicationArea = All;
 
-
+                trigger OnAction()
+                var
+                    RecRef: RecordRef;
+                begin
+                    RecRef.Open(Database::PurisUsers);
+                    if RecRef.FindSet() then begin
+                        RecRef.DeleteAll();
+                    end;
                 end;
             }
         }

@@ -85,7 +85,7 @@ function App() {
       <ul>
         {bcData.length > 0 ? (
           bcData.map((item: any, index: number) => {
-            const values: any[] = Object.values(item.fields).slice(0, 5);
+            const values: any[] = Object.values(item).slice(0, 5);
             return (
               <li key={index}>
                 {values.map((val: string | number | boolean, i: number) => (

@@ -67,18 +67,37 @@ function App() {
     Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GetTable', [tableNumber]);
   }
 
+  useEffect(() => {
+    console.log('innerHeight', window.innerHeight);
+  },[window.innerHeight])
+
   return (
     <div className='primaryContainer'>
       <h5>BCinReact</h5>
             <div className='buttonContainer'>
-        <button onClick={handleAddLine}>Add Line</button>
-        <button onClick={sendDataToBC}>Send Data to BC</button>
-        <button onClick={testMessage}>Test Message</button>
-        <button onClick={() => getTableData(50260)}>Get Table Data Puris Users</button>
-        <button onClick={() => getTableData(27)}>Get Sales Lines</button>
-      </div>
-      <div className='buttonContainer'>
-        <button onClick={handleSalesPage}>Sales Orders</button>
+              <button onClick={handleAddLine}>Add Line</button>
+              <button onClick={sendDataToBC}>Send Data to BC</button>
+              <button onClick={testMessage}>Test Message</button>
+              <button onClick={() => getTableData(50260)}>Get Table Data Puris Users</button>
+              <button onClick={() => getTableData(27)}>Get Items</button>
+            </div>
+            <div className='buttonContainer'>
+              <button onClick={handleSalesPage}>Sales Orders</button>
+            </div>
+
+      <div className='secondaryContainer'>
+        <p>
+          {bcData.map((line: any) => (
+            <pre>{line.fields.map((item: any) => (
+              <>
+              <pre>{item.name}</pre>
+              <pre>{item.value}</pre>
+              </>
+
+              ))}
+            </pre>
+          ))}
+        </p>
       </div>
     
 <div className='secondaryContainer'>
@@ -102,11 +121,13 @@ function App() {
           <li>No data received</li>
         )}
       </ul>
+      <div className='secondaryContainer'>
       {bcData && 
         <pre className='jsonBox'>
           {JSON.stringify(bcData, null, 2)}
         </pre>
         }
+        </div>
         </div>
 
 </div>

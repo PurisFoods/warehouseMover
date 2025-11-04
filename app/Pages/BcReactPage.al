@@ -103,12 +103,17 @@ page 50260 "WarehouseMover"
                     jsonManage: Codeunit "JSON Management";
                     data: Text;
                     jsonArray: JsonArray;
+
+                    recordCounter: Integer;
+
                 begin
                     RecRef.Open(tableNumber);
+                    recordCounter := 0;
                     if RecRef.FindSet() then begin
                         repeat
                             jsonArray.Add(jsonHelper.RecordToJson(RecRef));
-                        until RecRef.Next() = 0;
+                            recordCounter += 1;
+                        until (RecRef.Next() = 0) or (recordCounter = 10);
                     end;
                     jsonArray.WriteTo(data);
 

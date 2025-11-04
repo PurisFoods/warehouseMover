@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
-import type { JSX } from 'react';
-// import { DndContext } from '@dnd-kit/core';
-
+import { 
+  parseBCJson, 
+  serializeToBCJson, 
+  flattenBCRecord } 
+  from './modules/bcTransformer';
+import type { SimpleRecord,
+  BCRecord } 
+  from './modules/bcTransformer';
 // //Types
 // import type { DragEndEvent } from '@dnd-kit/core';
 // import type { ReactNode } from 'react';
@@ -11,25 +16,44 @@ import type { JSX } from 'react';
 // import { Droppable } from './components/Droppable';
 import './App.css';
 
-interface BCDataType {
-  [key: string]: any;
-}
 
 function App() {
-  const [bcData, setBcData] = useState<any>([]);
-  // const [isDropped, setIsDropped] = useState<boolean>(false);
-  // const draggableMarkup: ReactNode = (<Draggable>Drag Me</Draggable>);
- 
-  // const handleDragEnd = (event: DragEndEvent): void => {
-  //   if (event.over && event.over.id === 'droppable') {
-  //     setIsDropped(true);
-  //   }
-  // }
+   const [records, setRecords] = useState<SimpleRecord[]>([]);
+   const [originalBCRecords, setOriginalBCRecords] = useState<BCRecord[]>([]);
+
+  const handleReceiveData = (jsonString: string) => {
+  const simpleRecords = parseBCJson(jsonString);
+  const bcRecords = JSON.parse(jsonString);
+  setRecords(simpleRecords);
+  setOriginalBCRecords(bcRecords);
+};
+
+  // const addRecord = (newData: Partial<SimpleRecord>) => {
+  //   const nextRecordLine = Math.max(...records.map(r => r.recordLine), 0) + 1;
+  //   setRecords([...records, {
+  //     recordLine: nextRecordLine,
+  //     tableName: records[0]?.tableName || "PurisUsers",
+  //     company: records[0]?.company || "PurisProteinsProduction",
+  //     recordId: `${records[0]?.tableName}: ${nextRecordLine}`,
+  //     ...newData
+  //   }]);
+  // };
+
+  //   const updateRecord = (recordLine: number, updates: Partial<SimpleRecord>) => {
+  //   setRecords(records.map(r => 
+  //     r.recordLine === recordLine ? { ...r, ...updates } : r
+  //   ));
+  // };
+
+  //   const saveToBC = () => {
+  //   const bcJson = serializeToBCJson(records, originalBCRecords);
+  //   CurrPage.WarehouseMover.SendDataToReact(bcJson);
+  // };
 
   useEffect(() => {
     const handler = (e: Event): void => {
       const customEvent = e as CustomEvent;
-      setBcData(customEvent.detail);
+      handleReceiveData(JSON.stringify(customEvent.detail));
       console.log(customEvent.detail);
     };
     window.addEventListener('BCData', handler);
@@ -42,17 +66,10 @@ function App() {
     console.log(Microsoft?.Dynamics);
 
         if (Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod) {
-      Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('AddLines', [JSON.stringify(bcData)]);
+      Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('AddLines', [JSON.stringify(records)]);
   }
 }
 
-  const handleAddLine = () => {
-    const newItem: BCDataType = {
-      'UserName': "reactUser",
-      'data1': "HiFromReact"
-    }
-    setBcData((prevState: any[]) => [...prevState, newItem]);
-  }
 
   const testMessage = () => {
     console.log(Microsoft?.Dynamics);
@@ -67,6 +84,14 @@ function App() {
     Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GetTable', [tableNumber]);
   }
 
+  // const handleAddLine(() => {
+  //   const data: SimpleRecord;
+  //   data = {
+
+  //   }
+  //   updateRecord()
+  // })
+
   useEffect(() => {
     console.log('innerHeight', window.innerHeight);
   },[window.innerHeight])
@@ -75,7 +100,7 @@ function App() {
     <div className='primaryContainer'>
       <h5>BCinReact</h5>
             <div className='buttonContainer'>
-              <button onClick={handleAddLine}>Add Line</button>
+              {/* <button onClick={handleAddLine}>Add Line</button> */}
               <button onClick={sendDataToBC}>Send Data to BC</button>
               <button onClick={testMessage}>Test Message</button>
               <button onClick={() => getTableData(50260)}>Get Table Data Puris Users</button>
@@ -86,51 +111,14 @@ function App() {
             </div>
 
       <div className='secondaryContainer'>
-        <p>
-          {bcData.map((line: any) => (
-            <pre>{line.fields.map((item: any) => (
-              <>
-              <pre>{item.name}</pre>
-              <pre>{item.value}</pre>
-              </>
-
-              ))}
-            </pre>
-          ))}
-        </p>
-      </div>
-    
-<div className='secondaryContainer'>
-      <ul>
-        {bcData.length > 0 ? (
-          bcData.map((item: any, index: number) => {
-            const values: any[] = Object.values(item).slice(0, 5);
-            return (
-              <li key={index}>
-                {values.map((val: string | number | boolean, i: number) => (
-                  <span key={i}>{String(val)}</span>
-                )).reduce((prev: JSX.Element, curr: JSX.Element) => (
-                  <>
-                    {prev} - {curr}
-                  </>
-                ))}
-              </li>
-            );
-          })
-        ) : (
-          <li>No data received</li>
-        )}
-      </ul>
-      <div className='secondaryContainer'>
-      {bcData && 
+      {records && 
         <pre className='jsonBox'>
-          {JSON.stringify(bcData, null, 2)}
+          {JSON.stringify(records, null, 2)}
         </pre>
         }
         </div>
         </div>
 
-</div>
 
     // <DndContext onDragEnd={handleDragEnd}>
     //   {!isDropped ? draggableMarkup : null}

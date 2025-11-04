@@ -12,23 +12,9 @@ page 50260 "WarehouseMover"
             {
                 trigger ReceiveDataFromReact(JsonArrayString: Text)
                 var
-                    JsonArray: JsonArray;
-                    JsonToken: JsonToken;
-                    i: Integer;
-                    OutputText: Text;
+                    ReactTableManagement: Codeunit ReactTableManagement;
                 begin
-                    if not JsonArray.ReadFrom(JsonArrayString) then
-                        exit;
-
-                    OutputText := '';
-                    for i := 0 to JsonArray.Count() - 1 do begin
-                        JsonArray.Get(i, JsonToken);
-                        OutputText += ProcessJsonObject(JsonToken.AsObject());
-                        if i < JsonArray.Count() - 1 then
-                            OutputText += ' | ';
-                    end;
-
-                    Message(OutputText);
+                    ReactTableManagement.runUpdatesFromReact(JsonArrayString);
                 end;
 
                 trigger AddLines(JsonArrayString: Text)

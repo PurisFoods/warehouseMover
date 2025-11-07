@@ -42,6 +42,9 @@ function App() {
 
     const saveToBC = () => {
     const bcJson = serializeToBCJson(records, originalBCRecords);
+    
+    console.log('bcJson', bcJson);
+
     Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ReceiveDataFromReact', [bcJson]);
   };
 
@@ -76,11 +79,28 @@ function App() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const updatedData = {
-      "data1": changeData1
-    }
-    updateRecord(1, updatedData);
-    saveToBC();
+    
+    // Log current state before update
+    console.log('Current records:', records);
+    console.log('Original BC records:', originalBCRecords);
+    
+    const updatedRecords = records.map(record => 
+      record.recordLine === 1 
+        ? { ...record, data1: changeData1 }
+        : record
+    );
+
+    // Log the updated records
+    console.log('Updated records:', updatedRecords);
+    
+    const bcJson = serializeToBCJson(updatedRecords, originalBCRecords);
+    
+    // Log final JSON
+    console.log('Final BC JSON:', bcJson);
+    
+    Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ReceiveDataFromReact', [bcJson]);
+    setRecords(updatedRecords);
+    setChangeData1('');
   }
 
   useEffect(() => {

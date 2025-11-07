@@ -25,6 +25,7 @@ codeunit 50261 ReactTableManagement
 
         jsonToken.AsObject().Get('name', tableNameToken);
         tableNumber := GetTableNumberFromName(tableNameToken.AsValue().AsText());
+
         RecRef.Open(tableNumber);
         // Process each record
         for i := 0 to jsonArray.Count() - 1 do begin
@@ -42,75 +43,77 @@ codeunit 50261 ReactTableManagement
         valueToken: JsonToken;
         fieldRef: FieldRef;
         fieldsArray: JsonArray;
-        i: Integer;
     begin
         // Get record line from primaryKey.fields[0].value
-        if not jsonObject.Contains('primaryKey') then begin
+        if not jsonObject.Get('primaryKey', jsonToken) then
             Error('primaryKey field is required');
-        end;
 
-        jsonObject.Get('primaryKey', jsonToken);
-        jsonToken.AsObject().Get('fields', jsonToken);
+        if not jsonToken.AsObject().Get('fields', jsonToken) then
+            Error('fields array not found in primaryKey');
+
         fieldsArray := jsonToken.AsArray();
         fieldsArray.Get(0, jsonToken);
-        jsonToken.AsObject().Get('value', valueToken);
+
+        if not jsonToken.AsObject().Get('value', valueToken) then
+            Error('value not found in primaryKey field');
+
         recordLine := valueToken.AsValue().AsInteger();
 
-        // Set range on first field using FieldRef
+        // Find record using primary key
         fieldRef := RecRef.FieldIndex(1);
         fieldRef.SetRange(recordLine);
 
         if RecRef.FindFirst() then begin
             // Update existing record
-            RecRef.Reset();
             UpdateRecordFields(RecRef, jsonObject);
-            RecRef.Modify(false);
+            if not RecRef.Modify(true) then
+                Error('Failed to modify record');
         end else begin
-            // Clear the range before inserting
-            RecRef.Reset();
+            // Insert new record
             RecRef.Init();
-            RecRef.FieldIndex(1).Value := recordLine;
+            fieldRef.Value := recordLine;
             SetRecordFields(RecRef, jsonObject);
-            RecRef.Insert(false);
+            if not RecRef.Insert(true) then
+                Error('Failed to insert record');
         end;
     end;
 
     local procedure UpdateRecordFields(var RecRef: RecordRef; jsonObject: JsonObject)
     var
         fieldRef: FieldRef;
-        fieldCount: Integer;
-        i: Integer;
-        fieldName: Text;
         fieldsArray: JsonArray;
         fieldToken: JsonToken;
         fieldObjToken: JsonToken;
         valueToken: JsonToken;
-        j: Integer;
+        nameToken: JsonToken;
+        fieldName: Text;
+        i: Integer;
     begin
-        if not jsonObject.Contains('fields') then begin
+        if not jsonObject.Get('fields', fieldToken) then
             exit;
-        end;
 
-        jsonObject.Get('fields', fieldToken);
         fieldsArray := fieldToken.AsArray();
 
-        for j := 0 to fieldsArray.Count() - 1 do begin
-            fieldsArray.Get(j, fieldObjToken);
-            fieldObjToken.AsObject().Get('name', fieldToken);
-            fieldName := fieldToken.AsValue().AsText();
+        foreach fieldObjToken in fieldsArray do begin
+            if fieldObjToken.AsObject().Get('name', nameToken) then begin
+                fieldName := nameToken.AsValue().AsText();
 
-            fieldCount := RecRef.FieldCount();
-            for i := 1 to fieldCount do begin
-                fieldRef := RecRef.FieldIndex(i);
-                if fieldRef.Name = fieldName then begin
-                    fieldObjToken.AsObject().Get('value', valueToken);
-                    if not valueToken.AsValue().IsNull() then begin
-                        SetFieldValue(fieldRef, valueToken.AsValue());
+                // Try to find field by name by iterating through fields
+                for i := 1 to RecRef.FieldCount do begin
+                    fieldRef := RecRef.FieldIndex(i);
+                    if fieldRef.Name = fieldName then begin
+                        if fieldObjToken.AsObject().Get('value', valueToken) then begin
+                            if not valueToken.AsValue().IsNull() then
+                                SetFieldValue(fieldRef, valueToken.AsValue());
+                        end;
+                        break;
                     end;
-                    exit;  // Exit inner loop once field is found
                 end;
             end;
         end;
+
+        if not RecRef.Modify(true) then
+            Error('Failed to modify record %1', RecRef.RecordId);
     end;
 
     local procedure SetRecordFields(var RecRef: RecordRef; jsonObject: JsonObject)

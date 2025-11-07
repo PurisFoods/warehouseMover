@@ -63,15 +63,32 @@ export function unflattenToBCRecord(
   simpleRecord: SimpleRecord,
   originalBCRecord: BCRecord
 ): BCRecord {
-  const unflatted: BCRecord = {
-    ...originalBCRecord,
-    fields: originalBCRecord.fields.map(field => ({
+  // Create fresh fields array with updated values
+  const updatedFields = originalBCRecord.fields.map(field => {
+    const camelName = toCamelCase(field.name);
+    // Create new field object to avoid reference issues
+    return {
       ...field,
-      value: simpleRecord[toCamelCase(field.name)] ?? field.value
+      value: simpleRecord[camelName] ?? field.value
+    };
+  });
+
+  // Create fresh primary key fields
+  const updatedPrimaryKey: BCPrimaryKey = {
+    ...originalBCRecord.primaryKey,
+    fields: originalBCRecord.primaryKey.fields.map(pkField => ({
+      ...pkField,
+      value: simpleRecord[toCamelCase(pkField.name)] ?? pkField.value
     }))
   };
 
-  return unflatted;
+  // Create completely new record object
+  return {
+    ...originalBCRecord,
+    recordId: simpleRecord.recordId ?? originalBCRecord.recordId,
+    primaryKey: updatedPrimaryKey,
+    fields: updatedFields
+  };
 }
 
 // Convert array of simple records back to BC format
@@ -79,9 +96,18 @@ export function unflattenToBCRecords(
   simpleRecords: SimpleRecord[],
   originalBCRecords: BCRecord[]
 ): BCRecord[] {
-  return simpleRecords.map((simpleRecord, index) =>
-    unflattenToBCRecord(simpleRecord, originalBCRecords[index] || originalBCRecords[0])
+  const originalsById = new Map(
+    originalBCRecords.map(r => [r.recordId, r])
   );
+
+  return simpleRecords.map((simpleRecord, index) => {
+    const matchingOriginal =
+      (simpleRecord.recordId && originalsById.get(simpleRecord.recordId)) ||
+      originalBCRecords[index] ||
+      originalBCRecords[0];
+
+    return unflattenToBCRecord(simpleRecord, matchingOriginal);
+  });
 }
 
 // Parse BC JSON string and return flattened records
@@ -101,7 +127,15 @@ export function serializeToBCJson(
   originalBCRecords: BCRecord[]
 ): string {
   try {
+    // Debug logging
+    console.log('Input simple records:', simpleRecords);
+    console.log('Original BC records:', originalBCRecords);
+
     const bcRecords = unflattenToBCRecords(simpleRecords, originalBCRecords);
+    
+    // Debug logging
+    console.log('Output BC records:', bcRecords);
+    
     return JSON.stringify(bcRecords);
   } catch (error) {
     console.error('Error serializing to BC JSON:', error);

@@ -1,27 +1,33 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  parseBCJson, 
-  serializeToBCJson, 
-  flattenBCRecord } 
+import {
+  parseBCJson,
+  serializeToBCJson,
+}
   from './modules/bcTransformer';
-import type { SimpleRecord,
-  BCRecord } 
+import type {
+  SimpleRecord,
+  BCRecord
+}
   from './modules/bcTransformer';
+
+import { getTableData } from './modules/bcCalls';
+
+import { BinContent } from './components/binContents';
 
 import './App.css';
 
 
 function App() {
-   const [records, setRecords] = useState<SimpleRecord[]>([]);
-   const [originalBCRecords, setOriginalBCRecords] = useState<BCRecord[]>([]);
-   const [changeData1, setChangeData1] = useState<string>('');
+  const [records, setRecords] = useState<SimpleRecord[]>([]);
+  const [originalBCRecords, setOriginalBCRecords] = useState<BCRecord[]>([]);
+  const [changeData1, setChangeData1] = useState<string>('');
 
   const handleReceiveData = (jsonString: string) => {
-  const simpleRecords = parseBCJson(jsonString);
-  const bcRecords = JSON.parse(jsonString);
-  setRecords(simpleRecords);
-  setOriginalBCRecords(bcRecords);
-};
+    const simpleRecords = parseBCJson(jsonString);
+    const bcRecords = JSON.parse(jsonString);
+    setRecords(simpleRecords);
+    setOriginalBCRecords(bcRecords);
+  };
 
   const addRecord = (newData: Partial<SimpleRecord>) => {
     const nextRecordLine = Math.max(...records.map(r => r.recordLine), 0) + 1;
@@ -34,15 +40,9 @@ function App() {
     }]);
   };
 
-    const updateRecord = (recordLine: number, updates: Partial<SimpleRecord>) => {
-    setRecords(records.map(r => 
-      r.recordLine === recordLine ? { ...r, ...updates } : r
-    ));
-  };
-
-    const saveToBC = () => {
+  const saveToBC = () => {
     const bcJson = serializeToBCJson(records, originalBCRecords);
-    
+
     console.log('bcJson', bcJson);
 
     Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ReceiveDataFromReact', [bcJson]);
@@ -60,13 +60,7 @@ function App() {
     }
   }, []);
 
-  const handleSalesPage = () => {
-    Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GoToPage', [1]);
-  }
 
-  const getTableData = (tableNumber: Number) => {
-    Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GetTable', [tableNumber]);
-  }
 
   const handleAddLine = () => {
     const data: Partial<SimpleRecord> = {
@@ -79,25 +73,25 @@ function App() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     // Log current state before update
     console.log('Current records:', records);
     console.log('Original BC records:', originalBCRecords);
-    
-    const updatedRecords = records.map(record => 
-      record.recordLine === 1 
+
+    const updatedRecords = records.map(record =>
+      record.recordLine === 1
         ? { ...record, data1: changeData1 }
         : record
     );
 
     // Log the updated records
     console.log('Updated records:', updatedRecords);
-    
+
     const bcJson = serializeToBCJson(updatedRecords, originalBCRecords);
-    
+
     // Log final JSON
     console.log('Final BC JSON:', bcJson);
-    
+
     Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ReceiveDataFromReact', [bcJson]);
     setRecords(updatedRecords);
     setChangeData1('');
@@ -105,32 +99,36 @@ function App() {
 
   useEffect(() => {
     console.log('innerHeight', window.innerHeight);
-  },[window.innerHeight])
+  }, [window.innerHeight])
 
   return (
     <div className='primaryContainer'>
       <h5>BCinReact</h5>
-            <div className='buttonContainer'>
-              <button onClick={handleAddLine}>Add Line</button>
-              <button onClick={saveToBC}>Send Data to BC</button>
-              <button onClick={() => getTableData(50260)}>Get Table Data Puris Users</button>
-              <button onClick={() => getTableData(27)}>Get Items</button>
-            </div>
-            <div className='buttonContainer'>
-              <form onSubmit={handleSubmit}>
-                <input type='text' onChange={(e) => setChangeData1(e.target.value)} placeholder='Data1' value={changeData1}></input>
-                <button type='submit'>Submit</button>
-              </form>
-            </div>
 
-      <div className='secondaryContainer'>
-      {records && 
-        <pre className='jsonBox'>
-          {JSON.stringify(records, null, 2)}
-        </pre>
+      <BinContent records={records} setRecords={setRecords} />
+
+      {/* <div className='buttonContainer'>
+        <button onClick={handleAddLine}>Add Line</button>
+        <button onClick={saveToBC}>Send Data to BC</button>
+        <button onClick={() => getTableData(7302, 1, "DAWSON")}>Get Table Data Puris Users</button>
+        <button onClick={() => getTableData(27)}>Get Items</button>
+      </div>
+      <div className='buttonContainer'>
+        <form onSubmit={handleSubmit}>
+          <input type='text' onChange={(e) => setChangeData1(e.target.value)} placeholder='Data1' value={changeData1}></input>
+          <button type='submit'>Submit</button>
+        </form>
+      </div>
+
+
+      <div className='secondaryContainer' style={{ display: 'none' }}>
+        {records &&
+          <pre className='jsonBox'>
+            {JSON.stringify(records, null, 2)}
+          </pre>
         }
-        </div>
-        </div>
+      </div> */}
+    </div>
   )
 }
 export default App

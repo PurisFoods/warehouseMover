@@ -6,6 +6,14 @@ export const getTableData = (
   filterText?: string
 ) => {
   if (isDevEnv) {
+    console.log('Dev Env true');
+
+    const data = {
+      field: 'datahere',
+    };
+
+    const event = new CustomEvent('BCData', { detail: data });
+    console.log(event);
   } else {
     Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GetTable', [
       tableNumber,

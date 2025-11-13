@@ -16,7 +16,7 @@ function mountApp() {
     createRoot(container).render(
       <StrictMode>
         <FluentProvider theme={webLightTheme}>
-       <App />
+          <App />
         </FluentProvider>
       </StrictMode>,
     )
@@ -27,12 +27,13 @@ function mountApp() {
 }
 document.addEventListener('DOMContentLoaded', mountApp);
 
-(window as any).SendDataToReact = (jsonData:string) => {
+(window as any).SendDataToReact = (jsonData: string) => {
   try {
     const data = JSON.parse(jsonData);
 
     const event = new CustomEvent('BCData', { detail: data });
-      window.dispatchEvent(event);
+    window.dispatchEvent(event);
+    console.log(data);
   } catch (e) {
     console.error('Invalid Json from BC:', e, jsonData);
   }

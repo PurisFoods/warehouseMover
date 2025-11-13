@@ -107,7 +107,7 @@ function App() {
 
       <BinContent records={records} setRecords={setRecords} />
 
-      {/* <div className='buttonContainer'>
+      <div className='buttonContainer'>
         <button onClick={handleAddLine}>Add Line</button>
         <button onClick={saveToBC}>Send Data to BC</button>
         <button onClick={() => getTableData(7302, 1, "DAWSON")}>Get Table Data Puris Users</button>
@@ -127,7 +127,7 @@ function App() {
             {JSON.stringify(records, null, 2)}
           </pre>
         }
-      </div> */}
+      </div>
     </div>
   )
 }

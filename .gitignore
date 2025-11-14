@@ -29,4 +29,4 @@ app/snapshots/*
 app/scripts/*.js
 app/scripts/*.css
 
-react-app/src/mockData/*
+react-app/public/mockData/*

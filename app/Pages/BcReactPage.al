@@ -79,7 +79,7 @@ page 50260 "WarehouseMover"
                     end;
                 end;
 
-                trigger GetTable(tableNumber: Integer; filterField: Integer; filterText: Text)
+                trigger GetTable(tableNumber: Integer; maxRecords: Integer; filterField: Integer; filterText: Text)
                 var
                     RecRef: RecordRef;
                     filterRef: FieldRef;
@@ -104,7 +104,7 @@ page 50260 "WarehouseMover"
                     end;
 
                     if RecRef.FindSet() then begin
-                        jsonArray.Add(jsonHelper.RecordsToJsonArrayWithHeader(RecRef));
+                        jsonArray.Add(jsonHelper.RecordsToJsonArrayWithHeader(RecRef, maxRecords));
                     end;
                     jsonArray.WriteTo(data);
 

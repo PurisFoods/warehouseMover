@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from "react"
-import { DataGrid, DataGridBody, DataGridRow, DataGridHeader, DataGridHeaderCell, DataGridCell, createTableColumn } from "@fluentui/react-components"
+import { DataGrid, DataGridBody, DataGridRow, DataGridHeader, DataGridHeaderCell, DataGridCell, createTableColumn, TableHeader, TableHeaderCell } from "@fluentui/react-components"
 import { getTableData } from "../modules/bcCalls"
 
 import type { SimpleRecord } from "../modules/bcTransformer";
@@ -12,8 +12,9 @@ interface binContentProps {
 export const BinContent: React.FC<binContentProps> = ({ records, setRecords }) => {
 
     useEffect(() => {
-        getTableData(7302, 1, "DAWSON");
-        console.log(records);
+        // getTableData(7302, 500);
+        setRecords(getTableData(7302, 500));
+        console.log('bincontentrecords', records);
     }, [])
 
     const columns = useMemo(() => {
@@ -33,20 +34,13 @@ export const BinContent: React.FC<binContentProps> = ({ records, setRecords }) =
 
     return (
         <div style={{ width: "100%", overflowX: "auto" }}>
-            <DataGrid items={records} columns={columns}>
-                <DataGridHeader>
-                    <DataGridRow>
-                        {({ renderHeaderCell }) => renderHeaderCell()}
-                    </DataGridRow>
-                </DataGridHeader>
-                <DataGridBody>
-                    {(item, index: any) => (
-                        <DataGridRow key={index}>
-                            {({ renderCell }) => renderCell(item)}
-                        </DataGridRow>
-                    )}
-                </DataGridBody>
-            </DataGrid>
+            <table>
+                <TableHeader>
+                    {records.map((field) => (
+                        <TableHeaderCell>{field}</TableHeaderCell>
+                    ))}
+                </TableHeader>
+            </table>
         </div>
     )
 }

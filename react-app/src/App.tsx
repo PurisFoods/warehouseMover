@@ -53,7 +53,7 @@ function App() {
 
     const handler = (e: Event): void => {
       const customEvent = e as CustomEvent;
-      handleReceiveData(JSON.stringify(customEvent.detail));
+      setRecords(customEvent.detail);
       console.log(customEvent.detail);
     };
 
@@ -109,13 +109,13 @@ function App() {
       <h5>BCinReact</h5>
       <GetMockData />
 
-      {/* <BinContent records={records} setRecords={setRecords} /> */}
+      <BinContent records={records} setRecords={setRecords} />
 
-      <div className='buttonContainer'>
+      {/* <div className='buttonContainer'>
         <button onClick={handleAddLine}>Add Line</button>
         <button onClick={saveToBC}>Send Data to BC</button>
-        <button onClick={() => getTableData(7302)}>Get Table Data Puris Users</button>
-        <button onClick={() => getTableData(27)}>Get Items</button>
+        <button onClick={() => getTableData(7302, 500)}>Get Table Data Puris Users</button>
+        <button onClick={() => getTableData(27, 500)}>Get Items</button>
       </div>
       <div className='buttonContainer'>
         <form onSubmit={handleSubmit}>
@@ -131,7 +131,7 @@ function App() {
             {JSON.stringify(records, null, 2)}
           </pre>
         }
-      </div>
+      </div> */}
     </div>
   )
 }

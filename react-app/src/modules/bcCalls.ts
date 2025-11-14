@@ -2,6 +2,7 @@ import { isDevEnv } from './enviornment';
 
 export const getTableData = async (
   tableNumber: number,
+  maxRecords: number,
   filterField?: string | number,
   filterText?: string
 ) => {
@@ -50,9 +51,10 @@ export const getTableData = async (
   } else {
     if (filterField == undefined) filterField = 0;
     if (filterText == undefined) filterText = '';
-
+    console.log('Max Records to Nav', maxRecords);
     Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GetTable', [
       tableNumber,
+      maxRecords,
       filterField,
       filterText,
     ]);

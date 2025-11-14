@@ -320,7 +320,7 @@ codeunit 50260 JsonHelper
         exit(JORecord);
     end;
 
-    procedure RecordsToJsonArrayWithHeader(RecRef: RecordRef): JsonArray
+    procedure RecordsToJsonArrayWithHeader(RecRef: RecordRef; maxRecords: Integer): JsonArray
     var
         JsonArray: JsonArray;
         Header: JsonObject;
@@ -330,10 +330,8 @@ codeunit 50260 JsonHelper
         KeyRef: KeyRef;
         PrimaryKey: JsonArray;
         recordCounter: Integer;
-        MaxRecords: Integer;
     begin
-        MaxRecords := 20;
-
+        Message(format(maxRecords));
         // Build header
         Header.Add('tableNumber', RecRef.Number());
         Header.Add('tableName', RecRef.Name());

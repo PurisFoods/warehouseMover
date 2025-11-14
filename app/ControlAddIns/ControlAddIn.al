@@ -1,6 +1,6 @@
 controladdin warehouseMoverControlAddIn
 {
-    Scripts = 'scripts/index-BMJPwhKa.js';
+    Scripts = 'scripts/index-ByQBznrM.js';
     StyleSheets = 'scripts/index-Dp1WeHtW.css';
     RequestedHeight = 0;
     RequestedWidth = 0;
@@ -11,6 +11,6 @@ controladdin warehouseMoverControlAddIn
     event ReceiveDataFromReact(JsonArrayString: Text);
     event AddLines(JsonArrayString: Text);
     event GoToPage(i: Integer);
-    event GetTable(tableNumber: Integer; filterField: Integer; filterText: Text);
+    event GetTable(tableNumber: Integer; maxRecords: Integer; filterField: Integer; filterText: Text);
 
 }

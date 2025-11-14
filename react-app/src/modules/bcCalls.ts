@@ -13,9 +13,9 @@ export const getTableData = async (
       let data = await response.json();
 
       // Ensure data is always an array
-      if (!Array.isArray(data)) {
-        data = [data];
-      }
+      // if (!Array.isArray(data)) {
+      //   data = [data];
+      // }
 
       // Enhanced filtering for nested fields array
       if (filterField && filterText) {

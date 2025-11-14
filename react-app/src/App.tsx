@@ -23,11 +23,11 @@ function App() {
   const [originalBCRecords, setOriginalBCRecords] = useState<BCRecord[]>([]);
   const [changeData1, setChangeData1] = useState<string>('');
 
-  const handleReceiveData = (jsonString: string) => {
-    const simpleRecords = parseBCJson(jsonString);
-    const bcRecords = JSON.parse(jsonString);
-    setRecords(simpleRecords);
-    setOriginalBCRecords(bcRecords);
+  const handleReceiveData = (data: SimpleRecord[]) => {
+    // const simpleRecords = parseBCJson(jsonString);
+    // const bcRecords = JSON.parse(jsonString);
+    setRecords(data);
+    // setOriginalBCRecords(bcRecords);
   };
 
   const addRecord = (newData: Partial<SimpleRecord>) => {
@@ -111,10 +111,10 @@ function App() {
 
       {/* <BinContent records={records} setRecords={setRecords} /> */}
 
-      {/* <div className='buttonContainer'>
+      <div className='buttonContainer'>
         <button onClick={handleAddLine}>Add Line</button>
         <button onClick={saveToBC}>Send Data to BC</button>
-        <button onClick={() => getTableData(7302, 1, "DAWSON")}>Get Table Data Puris Users</button>
+        <button onClick={() => getTableData(7302)}>Get Table Data Puris Users</button>
         <button onClick={() => getTableData(27)}>Get Items</button>
       </div>
       <div className='buttonContainer'>
@@ -122,7 +122,7 @@ function App() {
           <input type='text' onChange={(e) => setChangeData1(e.target.value)} placeholder='Data1' value={changeData1}></input>
           <button type='submit'>Submit</button>
         </form>
-      </div> */}
+      </div>
 
 
       <div className='secondaryContainer' style={{ display: 'none' }}>

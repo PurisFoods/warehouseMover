@@ -48,27 +48,12 @@ document.addEventListener('DOMContentLoaded', mountApp);
 };
 
 window.addEventListener('BCData', (event: CustomEvent) => {
-
-  // const data = JSON.parse(event.detail);
-
-  console.log('saver function called - ', event.detail);
-  console.log('event.detail.length', event.detail.length);
-  console.log('event.detail[0] length', event.detail[0].length);
-
   const dataArray = event.detail[0];
-
-  console.log(Array.isArray(dataArray), dataArray.length, event.detail.length);
-  console.log('0', dataArray[0]);
 
   if (Array.isArray(dataArray) && dataArray.length > 1) {
     const header = dataArray[0];
-
-    console.log('header', header);
-
     const records = dataArray.slice(1);
     const tableNumber = header.tableNumber || 'unknown';
-
-    console.log('tableNumber', tableNumber);
 
     capturedBCData.set(tableNumber, records);
     console.log(`✓ Captured table ${tableNumber} (${header.tableName}), ${records.length} records`);
@@ -79,10 +64,6 @@ window.addEventListener('BCData', (event: CustomEvent) => {
     capturedBCData.set(tableNumber, []);
     console.log(`✓ Captured table ${tableNumber} (${header.tableName}), 0 records`);
   } else {
-    // fallback for non-array data
-
-    console.log('else ran');
-
     const tableNumber = dataArray.id || 'unknown';
     capturedBCData.set(tableNumber, [dataArray]);
     console.log(`✓ Captured table ${tableNumber}`);

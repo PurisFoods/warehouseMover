@@ -12,7 +12,7 @@ import type {
 
 import { getTableData } from './modules/bcCalls';
 
-import { BinContent } from './components/binContents';
+import { BinContent } from './components/BinContents';
 
 import './App.css';
 import { GetMockData } from './components/GetMockData';
@@ -107,9 +107,9 @@ function App() {
   return (
     <div className='primaryContainer'>
       <h5>BCinReact</h5>
-      <GetMockData />
+      {/* <GetMockData /> */}
 
-      {/* <BinContent records={records} setRecords={setRecords} /> */}
+      <BinContent records={records} setRecords={setRecords} />
 
       {/* <div className='buttonContainer'>
         <button onClick={handleAddLine}>Add Line</button>
@@ -122,7 +122,7 @@ function App() {
           <input type='text' onChange={(e) => setChangeData1(e.target.value)} placeholder='Data1' value={changeData1}></input>
           <button type='submit'>Submit</button>
         </form>
-      </div> */}
+      </div>
 
 
       <div className='secondaryContainer' style={{ display: 'none' }}>
@@ -131,7 +131,7 @@ function App() {
             {JSON.stringify(records, null, 2)}
           </pre>
         }
-      </div>
+      </div> */}
     </div>
   )
 }

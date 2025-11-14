@@ -1,0 +1,9382 @@
+[
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100000)",
+    "recordId": "Purch. Inv. Header: PI100000",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100000"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100000"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000698"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000698"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "PO Box  452"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Fort Pierre"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-01-31"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-01-31"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": "2025-01-31"
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Invoice PI100000"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2025-02-15"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-01-31"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "12345"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "PO Box  452"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Fort Pierre"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "56149"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "56149"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-01-31"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": "PI100000"
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "MWHARTON"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-01-31"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3815
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{69250803-E5DF-EF11-9345-002248C205EC}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 10200
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 10200
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 10200
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100001)",
+    "recordId": "Purch. Inv. Header: PI100001",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100001"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100001"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000698"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000698"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "PO Box  452"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Fort Pierre"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Invoice PI100001"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2025-02-19"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": "MW"
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": 1
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "230680"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "PO Box  452"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Fort Pierre"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "56149"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "56149"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": "PI100001"
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "MWHARTON"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3719
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{EFCAE4F6-42E3-EF11-9345-000D3AF6D036}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100002)",
+    "recordId": "Purch. Inv. Header: PI100002",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100002"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100002"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000698"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000698"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "PO Box  452"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Fort Pierre"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Order PO10000"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2025-02-19"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": "MW"
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": "PO10000"
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": 1
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": "1234321"
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "12343"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Sixta Grain"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "PO Box  452"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Fort Pierre"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": "10-22-23"
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "56149"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "56149"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": "PO"
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "MWHARTON"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-02-04"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3723
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 43050
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 43050
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 43050
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100003)",
+    "recordId": "Purch. Inv. Header: PI100003",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100003"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100003"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000076"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000076"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Beason, Carol"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Beason, Carol"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "590 Main St E"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Beach"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-02-26"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-02-16"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": "2025-02-26"
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Invoice PI100003"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2025-03-17"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-02-16"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": 1
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "269"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Beason, Carol"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Beason, Carol"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "590 Main St E"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Beach"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "52577"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "IA"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "52577"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "IA"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-02-16"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": "PI100003"
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "NLIGHTLE"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-02-16"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3729
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{33399D45-7FF4-EF11-9345-000D3AFE8699}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 267.5
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 267.5
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 267.5
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100004)",
+    "recordId": "Purch. Inv. Header: PI100004",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100004"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100004"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000195"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000195"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Davis, Odell"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Davis, Odell"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "The Davis Brown Tower"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": "215 10th Street, STE 1300"
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Des Moines"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": "Harrold"
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-05-02"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-05-02"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Order PO10003"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2026-05-17"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-05-02"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": "HARROLD"
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": "MW"
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": "PO10003"
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": 1
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "FAKETRIALVENDORINVOICE"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Davis, Odell"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Davis, Odell"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "The Davis Brown Tower"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": "215 10th Street, STE 1300"
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Des Moines"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "72355"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "AR"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "72355"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "AR"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-05-02"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": "PO"
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "RYOUNG"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-05-02"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3747
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 42500
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 42500
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 42500
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100005)",
+    "recordId": "Purch. Inv. Header: PI100005",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100005"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100005"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000234"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000234"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Fast Ag"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Fast Ag"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "PO Box 225"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Adams"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": "Harrold"
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Order PO10004"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2026-06-01"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": "HARROLD"
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": "PO10004"
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": 2
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "TRIALINVOICE5555"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Fast Ag"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Fast Ag"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "PO Box 225"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Adams"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "59225"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "MT"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "59225"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "MT"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": "PO"
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "RYOUNG"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3751
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 94350
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 94350
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 94350
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100006)",
+    "recordId": "Purch. Inv. Header: PI100006",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100006"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100006"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000004"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000004"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "4D Organics"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "4D Organics"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "PO Box 95428"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Chicago"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": "2026-05-31"
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Order PO10006"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2025-05-20"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": "PO10006"
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "5"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "4D Organics"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "4D Organics"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "PO Box 95428"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Chicago"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "68786"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "NE"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "68786"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "NE"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": "PO"
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "RYOUNG"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-05-05"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3765
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 39401.92
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 39401.92
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 39401.92
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100007)",
+    "recordId": "Purch. Inv. Header: PI100007",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100007"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100007"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000201"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000201"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Delta Diamond"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Delta Diamond"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "512 W. Fort Street"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Farmington"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-05-13"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-05-13"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Order PO10011"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2025-05-28"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-05-13"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": "PO10011"
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "N/A"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Delta Diamond"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Delta Diamond"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "512 W. Fort Street"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Farmington"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "71280"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "LA"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "71280"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "LA"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-05-13"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": "PO"
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "RYOUNG"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-05-13"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3771
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 500000
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 500000
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 500000
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100008)",
+    "recordId": "Purch. Inv. Header: PI100008",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100008"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100008"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000400"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000400"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Kerkaert, Bryan"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Kerkaert, Bryan"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "3103 St. Hwy 19"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Marshall"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-05-14"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-05-14"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Order PO10013"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2025-10-31"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-05-14"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": "PO10013"
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "N/A"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Kerkaert, Bryan"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Kerkaert, Bryan"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "3103 St. Hwy 19"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Marshall"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "56258"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "56258"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-05-14"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": "PO"
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "RYOUNG"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-05-14"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3775
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 11875
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 11875
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 11875
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "PurchInvHeader",
+    "company": "PURIS Grains",
+    "position": "No.=CONST(PI100009)",
+    "recordId": "Purch. Inv. Header: PI100009",
+    "primaryKey": {
+      "fieldCount": 1,
+      "fields": [
+        {
+          "id": 3,
+          "name": "No",
+          "type": "Code",
+          "value": "PI100009"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 3,
+        "name": "No",
+        "type": "Code",
+        "value": "PI100009"
+      },
+      {
+        "id": 2,
+        "name": "BuyfromVendorNo",
+        "type": "Code",
+        "value": "V000400"
+      },
+      {
+        "id": 4,
+        "name": "PaytoVendorNo",
+        "type": "Code",
+        "value": "V000400"
+      },
+      {
+        "id": 5,
+        "name": "PaytoName",
+        "type": "Text",
+        "value": "Kerkaert, Bryan"
+      },
+      {
+        "id": 6,
+        "name": "PaytoName2",
+        "type": "Text",
+        "value": "Kerkaert, Bryan"
+      },
+      {
+        "id": 7,
+        "name": "PaytoAddress",
+        "type": "Text",
+        "value": "3103 St. Hwy 19"
+      },
+      {
+        "id": 8,
+        "name": "PaytoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 9,
+        "name": "PaytoCity",
+        "type": "Text",
+        "value": "Marshall"
+      },
+      {
+        "id": 10,
+        "name": "PaytoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 11,
+        "name": "YourReference",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "ShiptoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "ShiptoName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "ShiptoName2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "ShiptoAddress",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 16,
+        "name": "ShiptoAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 17,
+        "name": "ShiptoCity",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 18,
+        "name": "ShiptoContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 19,
+        "name": "OrderDate",
+        "type": "Date",
+        "value": "2025-05-14"
+      },
+      {
+        "id": 20,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-05-15"
+      },
+      {
+        "id": 21,
+        "name": "ExpectedReceiptDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "PostingDescription",
+        "type": "Text",
+        "value": "Order PO10014"
+      },
+      {
+        "id": 23,
+        "name": "PaymentTermsCode",
+        "type": "Code",
+        "value": "15D"
+      },
+      {
+        "id": 24,
+        "name": "DueDate",
+        "type": "Date",
+        "value": "2025-10-31"
+      },
+      {
+        "id": 25,
+        "name": "PaymentDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 26,
+        "name": "PmtDiscountDate",
+        "type": "Date",
+        "value": "2025-05-14"
+      },
+      {
+        "id": 27,
+        "name": "ShipmentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 31,
+        "name": "VendorPostingGroup",
+        "type": "Code",
+        "value": "TRADE"
+      },
+      {
+        "id": 32,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 33,
+        "name": "CurrencyFactor",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "PricesIncludingVAT",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 37,
+        "name": "InvoiceDiscCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "LanguageCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "FormatRegion",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 43,
+        "name": "PurchaserCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 44,
+        "name": "OrderNo",
+        "type": "Code",
+        "value": "PO10014"
+      },
+      {
+        "id": 47,
+        "name": "NoPrinted",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 51,
+        "name": "OnHold",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "AppliestoDocType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 53,
+        "name": "AppliestoDocNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 55,
+        "name": "BalAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 66,
+        "name": "VendorOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "VendorInvoiceNo",
+        "type": "Code",
+        "value": "N/A2"
+      },
+      {
+        "id": 70,
+        "name": "VATRegistrationNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "ReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "VENDOR"
+      },
+      {
+        "id": 76,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 77,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 78,
+        "name": "VATCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "BuyfromVendorName",
+        "type": "Text",
+        "value": "Kerkaert, Bryan"
+      },
+      {
+        "id": 80,
+        "name": "BuyfromVendorName2",
+        "type": "Text",
+        "value": "Kerkaert, Bryan"
+      },
+      {
+        "id": 81,
+        "name": "BuyfromAddress",
+        "type": "Text",
+        "value": "3103 St. Hwy 19"
+      },
+      {
+        "id": 82,
+        "name": "BuyfromAddress2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "BuyfromCity",
+        "type": "Text",
+        "value": "Marshall"
+      },
+      {
+        "id": 84,
+        "name": "BuyfromContact",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "PaytoPostCode",
+        "type": "Code",
+        "value": "56258"
+      },
+      {
+        "id": 86,
+        "name": "PaytoCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 87,
+        "name": "PaytoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "BuyfromPostCode",
+        "type": "Code",
+        "value": "56258"
+      },
+      {
+        "id": 89,
+        "name": "BuyfromCounty",
+        "type": "Text",
+        "value": "MN"
+      },
+      {
+        "id": 90,
+        "name": "BuyfromCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "ShiptoPostCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "ShiptoCounty",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShiptoCountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "BalAccountType",
+        "type": "Option",
+        "value": "G/L Account"
+      },
+      {
+        "id": 95,
+        "name": "OrderAddressCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 97,
+        "name": "EntryPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "Correction",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 99,
+        "name": "DocumentDate",
+        "type": "Date",
+        "value": "2025-05-14"
+      },
+      {
+        "id": 101,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 102,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "PaymentMethodCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "PreAssignedNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 108,
+        "name": "NoSeries",
+        "type": "Code",
+        "value": "PI"
+      },
+      {
+        "id": 110,
+        "name": "OrderNoSeries",
+        "type": "Code",
+        "value": "PO"
+      },
+      {
+        "id": 111,
+        "name": "PreAssignedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "UserID",
+        "type": "Code",
+        "value": "RYOUNG"
+      },
+      {
+        "id": 113,
+        "name": "SourceCode",
+        "type": "Code",
+        "value": "PURCHASES"
+      },
+      {
+        "id": 114,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 116,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "VATBaseDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentNoSeries",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 140,
+        "name": "PrepaymentInvoice",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 141,
+        "name": "PrepaymentOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 151,
+        "name": "QuoteNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 170,
+        "name": "CreditorNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 171,
+        "name": "PaymentReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 179,
+        "name": "VATReportingDate",
+        "type": "Date",
+        "value": "2025-05-15"
+      },
+      {
+        "id": 210,
+        "name": "ShiptoPhoneNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1000,
+        "name": "RemittoCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1304,
+        "name": "VendorLedgerEntryNo",
+        "type": "Integer",
+        "value": 3779
+      },
+      {
+        "id": 5050,
+        "name": "CampaignNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5052,
+        "name": "BuyfromContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5053,
+        "name": "PaytoContactNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 8001,
+        "name": "DraftInvoiceSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 10005,
+        "name": "ShiptoUPSZone",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10015,
+        "name": "TaxExemptionNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10017,
+        "name": "ProvincialTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10018,
+        "name": "STETransactionID",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10020,
+        "name": "IRS1099Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10042,
+        "name": "FiscalInvoiceNumberPAC",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 8051,
+        "name": "RecurringBilling",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 27030,
+        "name": "DIOTTypeofOperation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 10031,
+        "name": "IRS1099ReportingPeriod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10032,
+        "name": "IRS1099FormNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10033,
+        "name": "IRS1099FormBoxNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 50100,
+        "name": "PricePerBushel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50101,
+        "name": "AcresPlanted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50102,
+        "name": "CBOTPremium",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50104,
+        "name": "SampleDue",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50105,
+        "name": "HeatDamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50106,
+        "name": "DamageAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50107,
+        "name": "WeevilDamagedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50108,
+        "name": "ShriveledAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50109,
+        "name": "CrackedSeedCoatAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50110,
+        "name": "SplitsAllowance",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50111,
+        "name": "BleachedMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50112,
+        "name": "WheatBarley",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50113,
+        "name": "SpotBuyContract",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50114,
+        "name": "StateofOrigin",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50115,
+        "name": "ForeignMaterialMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50116,
+        "name": "OtherColorMax",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50117,
+        "name": "TestWeightMinimum",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50118,
+        "name": "IsCheckOffApplied",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50119,
+        "name": "CheckOffValue",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50120,
+        "name": "ExpectedYield",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50121,
+        "name": "isContractSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50122,
+        "name": "ContractStatus",
+        "type": "Option",
+        "value": "Awaiting Signature"
+      },
+      {
+        "id": 50123,
+        "name": "isExtendedPaymentTermsSigned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50124,
+        "name": "SigningDeadline",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50125,
+        "name": "ContractDiscountSchedule",
+        "type": "Option",
+        "value": "Peas"
+      },
+      {
+        "id": 50126,
+        "name": "ContractedBushels",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 50127,
+        "name": "isSampleApproved",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 46,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 60,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 12187.5
+      },
+      {
+        "id": 61,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 12187.5
+      },
+      {
+        "id": 1302,
+        "name": "Closed",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1303,
+        "name": "RemainingAmount",
+        "type": "Decimal",
+        "value": 12187.5
+      },
+      {
+        "id": 1305,
+        "name": "InvoiceDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1310,
+        "name": "Cancelled",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 1311,
+        "name": "Corrective",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustainabilityLinesExist",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6211,
+        "name": "EmissionC02",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "EmissionCH4",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "EmissionN2O",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "EnergyConsumption",
+        "type": "Decimal",
+        "value": null
+      }
+    ]
+  }
+]

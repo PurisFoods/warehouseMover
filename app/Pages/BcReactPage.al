@@ -104,10 +104,7 @@ page 50260 "WarehouseMover"
                     end;
 
                     if RecRef.FindSet() then begin
-                        repeat
-                            jsonArray.Add(jsonHelper.RecordToJson(RecRef));
-                            recordCounter += 1;
-                        until RecRef.Next() = 0;
+                        jsonArray.Add(jsonHelper.RecordsToJsonArrayWithHeader(RecRef));
                     end;
                     jsonArray.WriteTo(data);
 

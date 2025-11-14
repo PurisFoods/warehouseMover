@@ -137,16 +137,16 @@ codeunit 50260 JsonHelper
                     GuidValue := FieldRef.Value();
                     FieldValue.SetValue(GuidValue);
                 end;
-            FieldType::MediaSet:
-                begin
-                    RecordRefField := FieldRef.Record();
-                    FieldValue.SetValue(GetBase64(RecordRefField.Number, FieldRef));
-                end;
-            FieldType::Media:
-                begin
-                    RecordRefField := FieldRef.Record();
-                    FieldValue.SetValue(GetBase64(RecordRefField.Number, FieldRef));
-                end;
+            // FieldType::MediaSet:
+            //     begin
+            //         RecordRefField := FieldRef.Record();
+            //         FieldValue.SetValue(GetBase64(RecordRefField.Number, FieldRef));
+            //     end;
+            // FieldType::Media:
+            //     begin
+            //         RecordRefField := FieldRef.Record();
+            //         FieldValue.SetValue(GetBase64(RecordRefField.Number, FieldRef));
+            //     end;
             else
                 FieldValue.SetValue(Format(FieldRef.Value()));
         end;
@@ -302,8 +302,62 @@ codeunit 50260 JsonHelper
         exit(HasValue);
     end;
 
+    //This method receives any Record using the Variant data type and converts it to Json format.
+    procedure RecordToJsonFlat(Rec: Variant): JsonObject
+    var
+        FieldRef: FieldRef;
+        JORecord: JsonObject;
+        RecordRef: RecordRef;
+        i: Integer;
+    begin
+        RecordRef.GetTable(Rec);
+        for i := 1 to RecordRef.FieldCount do begin
+            FieldRef := RecordRef.FieldIndex(i);
+            if (FieldRef.Type() in [FieldType::Blob, FieldType::Media, FieldType::MediaSet]) then
+                continue;
+            JORecord.Add(FieldRef.Name, FieldToJsonValue(FieldRef));
+        end;
+        exit(JORecord);
+    end;
 
+    procedure RecordsToJsonArrayWithHeader(RecRef: RecordRef): JsonArray
+    var
+        JsonArray: JsonArray;
+        Header: JsonObject;
+        RecordObj: JsonObject;
+        i: Integer;
+        FieldRef: FieldRef;
+        KeyRef: KeyRef;
+        PrimaryKey: JsonArray;
+        recordCounter: Integer;
+        MaxRecords: Integer;
+    begin
+        MaxRecords := 20;
 
+        // Build header
+        Header.Add('tableNumber', RecRef.Number());
+        Header.Add('tableName', RecRef.Name());
+        Header.Add('company', RecRef.CurrentCompany());
 
+        // Add primary key fields
+        KeyRef := RecRef.KeyIndex(1);
+        for i := 1 to KeyRef.FieldCount() do begin
+            FieldRef := KeyRef.FieldIndex(i);
+            PrimaryKey.Add(FieldRef.Name);
+        end;
+        Header.Add('primaryKeyFields', PrimaryKey);
 
+        JsonArray.Add(Header);
+
+        // Add records with limit
+        recordCounter := 0;
+        if RecRef.FindSet() then
+            repeat
+                RecordObj := RecordToJsonFlat(RecRef);
+                JsonArray.Add(RecordObj);
+                recordCounter += 1;
+            until (RecRef.Next() = 0) or (recordCounter >= MaxRecords);
+
+        exit(JsonArray);
+    end;
 }

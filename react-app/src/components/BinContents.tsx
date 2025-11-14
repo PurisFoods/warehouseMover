@@ -13,6 +13,7 @@ export const BinContent: React.FC<binContentProps> = ({ records, setRecords }) =
 
     useEffect(() => {
         getTableData(7302, 1, "DAWSON");
+        console.log(records);
     }, [])
 
     const columns = useMemo(() => {

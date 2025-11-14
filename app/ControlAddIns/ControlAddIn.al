@@ -1,6 +1,6 @@
 controladdin warehouseMoverControlAddIn
 {
-    Scripts = 'scripts/index-Dnm02-7i.js';
+    Scripts = 'scripts/index-BZDgmHke.js';
     StyleSheets = 'scripts/index-Dp1WeHtW.css';
     RequestedHeight = 0;
     RequestedWidth = 0;

@@ -92,26 +92,22 @@ page 50260 "WarehouseMover"
                     data: Text;
                     jsonArray: JsonArray;
                     recordCounter: Integer;
-
                 begin
                     RecRef.Open(tableNumber);
                     recordCounter := 0;
-                    if filterField > 0 then begin
+
+                    // Only apply filter if both filterField and filterText are provided
+                    if (filterField > 0) and (filterText <> '') then begin
                         filterRef := RecRef.Field(filterField);
-
-                        Message('%1 - %2', filterRef.value, filterText);
-
                         filterString := StrSubstNo('WHERE(%1=1(%2))', filterRef.Name, filterText);
                         RecRef.SetView(filterString);
                     end;
 
-
                     if RecRef.FindSet() then begin
-
                         repeat
                             jsonArray.Add(jsonHelper.RecordToJson(RecRef));
                             recordCounter += 1;
-                        until (RecRef.Next() = 0) or (recordCounter = 10);
+                        until RecRef.Next() = 0;
                     end;
                     jsonArray.WriteTo(data);
 

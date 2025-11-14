@@ -2,7 +2,7 @@ import { isDevEnv } from './enviornment';
 
 export const getTableData = async (
   tableNumber: number,
-  filterField?: number,
+  filterField?: string | number,
   filterText?: string
 ) => {
   if (isDevEnv()) {
@@ -10,11 +10,34 @@ export const getTableData = async (
     try {
       const response = await fetch(`/mockData/${tableNumber}.json`);
       if (!response.ok) throw new Error('Mock data not found');
-      console.log(response);
       let data = await response.json();
+
       // Ensure data is always an array
       if (!Array.isArray(data)) {
         data = [data];
+      }
+
+      // Enhanced filtering for nested fields array
+      if (filterField && filterText) {
+        data = data.filter((record: any) => {
+          // Try direct property first
+          if (
+            record[filterField] != null &&
+            String(record[filterField]).includes(filterText)
+          ) {
+            return true;
+          }
+          // Then check in the fields array
+          if (Array.isArray(record.fields)) {
+            return record.fields.some(
+              (f: any) =>
+                (f.name === filterField || f.id === filterField) &&
+                f.value != null &&
+                String(f.value).includes(filterText)
+            );
+          }
+          return false;
+        });
       }
 
       // Simulate BC event

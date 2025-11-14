@@ -1,0 +1,1102 @@
+[
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM000042),Variant Code=CONST(),Package No.=CONST(UNASSIGNED)",
+    "recordId": "Package No. Information: ITM000042,\"\",UNASSIGNED",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM000042"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "UNASSIGNED"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM000042"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "UNASSIGNED"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 106984.892
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 106984.892
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM000229),Variant Code=CONST(),Package No.=CONST(LOTMAGIC0001-001)",
+    "recordId": "Package No. Information: ITM000229,\"\",LOTMAGIC0001-001",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM000229"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "LOTMAGIC0001-001"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM000229"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "LOTMAGIC0001-001"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 500
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 500
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM100003),Variant Code=CONST(),Package No.=CONST(20250801DW-1-001)",
+    "recordId": "Package No. Information: ITM100003,\"\",20250801DW-1-001",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM100003"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "20250801DW-1-001"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM100003"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "20250801DW-1-001"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 1763.68
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 1763.68
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM100003),Variant Code=CONST(),Package No.=CONST(20250801DW-1-002)",
+    "recordId": "Package No. Information: ITM100003,\"\",20250801DW-1-002",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM100003"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "20250801DW-1-002"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM100003"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "20250801DW-1-002"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 1763.68
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 1763.68
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM100003),Variant Code=CONST(),Package No.=CONST(20250801DW-1-003)",
+    "recordId": "Package No. Information: ITM100003,\"\",20250801DW-1-003",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM100003"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "20250801DW-1-003"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM100003"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "20250801DW-1-003"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 1763.68
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 1763.68
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM100003),Variant Code=CONST(),Package No.=CONST(20250801DW-1-004)",
+    "recordId": "Package No. Information: ITM100003,\"\",20250801DW-1-004",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM100003"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "20250801DW-1-004"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM100003"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "20250801DW-1-004"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 1763.68
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 1763.68
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM100003),Variant Code=CONST(),Package No.=CONST(20250801DW-1-005)",
+    "recordId": "Package No. Information: ITM100003,\"\",20250801DW-1-005",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM100003"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "20250801DW-1-005"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM100003"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "20250801DW-1-005"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 1763.68
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 1763.68
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM100003),Variant Code=CONST(),Package No.=CONST(20250801DW-1-006)",
+    "recordId": "Package No. Information: ITM100003,\"\",20250801DW-1-006",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM100003"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "20250801DW-1-006"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM100003"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "20250801DW-1-006"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 1763.68
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 1763.68
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM100003),Variant Code=CONST(),Package No.=CONST(20250801DW-1-007)",
+    "recordId": "Package No. Information: ITM100003,\"\",20250801DW-1-007",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM100003"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "20250801DW-1-007"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM100003"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "20250801DW-1-007"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 1763.68
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 1763.68
+      }
+    ]
+  },
+  {
+    "id": 6515,
+    "name": "PackageNoInformation",
+    "company": "PurisProteinsProduction",
+    "position": "Item No.=CONST(ITM100003),Variant Code=CONST(),Package No.=CONST(20250801DW-1-008)",
+    "recordId": "Package No. Information: ITM100003,\"\",20250801DW-1-008",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "ItemNo",
+          "type": "Code",
+          "value": "ITM100003"
+        },
+        {
+          "id": 2,
+          "name": "VariantCode",
+          "type": "Code",
+          "value": null
+        },
+        {
+          "id": 3,
+          "name": "PackageNo",
+          "type": "Code",
+          "value": "20250801DW-1-008"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "ItemNo",
+        "type": "Code",
+        "value": "ITM100003"
+      },
+      {
+        "id": 2,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 3,
+        "name": "PackageNo",
+        "type": "Code",
+        "value": "20250801DW-1-008"
+      },
+      {
+        "id": 5,
+        "name": "CountryRegionCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 10,
+        "name": "Description",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 12,
+        "name": "CertificateNumber",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "Blocked",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 21,
+        "name": "DateFilter",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 22,
+        "name": "LocationFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "BinFilter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 14,
+        "name": "Comment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 20,
+        "name": "Inventory",
+        "type": "Decimal",
+        "value": 1763.68
+      },
+      {
+        "id": 24,
+        "name": "ExpiredInventory",
+        "type": "Decimal",
+        "value": 1763.68
+      }
+    ]
+  }
+]

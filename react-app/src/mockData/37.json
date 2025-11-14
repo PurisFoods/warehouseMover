@@ -1,0 +1,2814 @@
+[
+  {
+    "id": 37,
+    "name": "SalesLine",
+    "company": "PURIS Grains",
+    "position": "Document Type=CONST(Order),Document No.=CONST(SO10010),Line No.=CONST(10000)",
+    "recordId": "Sales Line: Order,SO10010,10000",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "DocumentType",
+          "type": "Option",
+          "value": "Order"
+        },
+        {
+          "id": 3,
+          "name": "DocumentNo",
+          "type": "Code",
+          "value": "SO10010"
+        },
+        {
+          "id": 4,
+          "name": "LineNo",
+          "type": "Integer",
+          "value": 10000
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "DocumentType",
+        "type": "Option",
+        "value": "Order"
+      },
+      {
+        "id": 3,
+        "name": "DocumentNo",
+        "type": "Code",
+        "value": "SO10010"
+      },
+      {
+        "id": 4,
+        "name": "LineNo",
+        "type": "Integer",
+        "value": 10000
+      },
+      {
+        "id": 2,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": "C000027"
+      },
+      {
+        "id": 5,
+        "name": "Type",
+        "type": "Option",
+        "value": "Item"
+      },
+      {
+        "id": 6,
+        "name": "No",
+        "type": "Code",
+        "value": "ITM000031"
+      },
+      {
+        "id": 7,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": "RANDOLPH"
+      },
+      {
+        "id": 8,
+        "name": "PostingGroup",
+        "type": "Code",
+        "value": "ORG SOY NATTO FG"
+      },
+      {
+        "id": 10,
+        "name": "ShipmentDate",
+        "type": "Date",
+        "value": "2025-11-13"
+      },
+      {
+        "id": 11,
+        "name": "Description",
+        "type": "Text",
+        "value": "PS135-Natto-Finished Goods-ORG"
+      },
+      {
+        "id": 12,
+        "name": "Description2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "UnitofMeasure",
+        "type": "Text",
+        "value": "Bushels"
+      },
+      {
+        "id": 15,
+        "name": "Quantity",
+        "type": "Decimal",
+        "value": 50000
+      },
+      {
+        "id": 16,
+        "name": "OutstandingQuantity",
+        "type": "Decimal",
+        "value": 50000
+      },
+      {
+        "id": 17,
+        "name": "QtytoInvoice",
+        "type": "Decimal",
+        "value": 50000
+      },
+      {
+        "id": 18,
+        "name": "QtytoShip",
+        "type": "Decimal",
+        "value": 50000
+      },
+      {
+        "id": 22,
+        "name": "UnitPrice",
+        "type": "Decimal",
+        "value": 11.5
+      },
+      {
+        "id": 23,
+        "name": "UnitCost(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 25,
+        "name": "VAT%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 27,
+        "name": "LineDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LineDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": 575000
+      },
+      {
+        "id": 30,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": 575000
+      },
+      {
+        "id": 32,
+        "name": "AllowInvoiceDisc",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 34,
+        "name": "GrossWeight",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "NetWeight",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 36,
+        "name": "UnitsperParcel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 37,
+        "name": "UnitVolume",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 38,
+        "name": "AppltoItemEntry",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 40,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "CustomerPriceGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 45,
+        "name": "JobNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "WorkTypeCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 56,
+        "name": "RecalculateInvoiceDisc",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 57,
+        "name": "OutstandingAmount",
+        "type": "Decimal",
+        "value": 575000
+      },
+      {
+        "id": 58,
+        "name": "QtyShippedNotInvoiced",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 59,
+        "name": "ShippedNotInvoiced",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 60,
+        "name": "QuantityShipped",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 61,
+        "name": "QuantityInvoiced",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 63,
+        "name": "ShipmentNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 64,
+        "name": "ShipmentLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 67,
+        "name": "Profit%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "BilltoCustomerNo",
+        "type": "Code",
+        "value": "C000027"
+      },
+      {
+        "id": 69,
+        "name": "InvDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 71,
+        "name": "PurchaseOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "PurchOrderLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "DropShipment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "CUSTOMER"
+      },
+      {
+        "id": 75,
+        "name": "GenProdPostingGroup",
+        "type": "Code",
+        "value": "ORG_SOY_NATTO"
+      },
+      {
+        "id": 77,
+        "name": "VATCalculationType",
+        "type": "Option",
+        "value": "Normal Tax"
+      },
+      {
+        "id": 78,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 80,
+        "name": "AttachedtoLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 81,
+        "name": "ExitPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 82,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 84,
+        "name": "TaxCategory",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 86,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 87,
+        "name": "TaxGroupCode",
+        "type": "Code",
+        "value": "NONE"
+      },
+      {
+        "id": 88,
+        "name": "VATClauseCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 89,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 90,
+        "name": "VATProdPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "OutstandingAmount(LCY)",
+        "type": "Decimal",
+        "value": 575000
+      },
+      {
+        "id": 93,
+        "name": "ShippedNotInvoiced(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "ShippedNotInv(LCY)NoVAT",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 96,
+        "name": "Reserve",
+        "type": "Option",
+        "value": "Optional"
+      },
+      {
+        "id": 97,
+        "name": "BlanketOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "BlanketOrderLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 99,
+        "name": "VATBaseAmount",
+        "type": "Decimal",
+        "value": 575000
+      },
+      {
+        "id": 100,
+        "name": "UnitCost",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 101,
+        "name": "SystemCreatedEntry",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 103,
+        "name": "LineAmount",
+        "type": "Decimal",
+        "value": 575000
+      },
+      {
+        "id": 104,
+        "name": "VATDifference",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 105,
+        "name": "InvDiscAmounttoInvoice",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 106,
+        "name": "VATIdentifier",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "ICPartnerRefType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 108,
+        "name": "ICPartnerReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 109,
+        "name": "Prepayment%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 110,
+        "name": "PrepmtLineAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 111,
+        "name": "PrepmtAmtInv",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "PrepmtAmtInclVAT",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 113,
+        "name": "PrepaymentAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 114,
+        "name": "PrepmtVATBaseAmt",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "PrepaymentVAT%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 116,
+        "name": "PrepmtVATCalcType",
+        "type": "Option",
+        "value": "Normal Tax"
+      },
+      {
+        "id": 117,
+        "name": "PrepaymentVATIdentifier",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 118,
+        "name": "PrepaymentTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "PrepaymentTaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 120,
+        "name": "PrepaymentTaxGroupCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 121,
+        "name": "PrepmtAmttoDeduct",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 122,
+        "name": "PrepmtAmtDeducted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 123,
+        "name": "PrepaymentLine",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 124,
+        "name": "PrepmtAmountInvInclVAT",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 129,
+        "name": "PrepmtAmountInv(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 130,
+        "name": "ICPartnerCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 132,
+        "name": "PrepmtVATAmountInv(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentVATDifference",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 136,
+        "name": "PrepmtVATDifftoDeduct",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 137,
+        "name": "PrepmtVATDiffDeducted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 138,
+        "name": "ICItemReferenceNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 145,
+        "name": "PmtDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 146,
+        "name": "PrepmtPmtDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 180,
+        "name": "LineDiscountCalculation",
+        "type": "Option",
+        "value": "None"
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 900,
+        "name": "QtytoAssembletoOrder",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 901,
+        "name": "QtytoAsmtoOrder(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1001,
+        "name": "JobTaskNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1002,
+        "name": "JobContractEntryNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1700,
+        "name": "DeferralCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1702,
+        "name": "ReturnsDeferralStartDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 2675,
+        "name": "SelectedAllocAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 2678,
+        "name": "AllocationAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 2679,
+        "name": "AllocSalesLineSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 5402,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5403,
+        "name": "BinCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5404,
+        "name": "QtyperUnitofMeasure",
+        "type": "Decimal",
+        "value": 1
+      },
+      {
+        "id": 5405,
+        "name": "Planned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5406,
+        "name": "QtyRoundingPrecision",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5408,
+        "name": "QtyRoundingPrecision(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5407,
+        "name": "UnitofMeasureCode",
+        "type": "Code",
+        "value": "BUSHEL"
+      },
+      {
+        "id": 5415,
+        "name": "Quantity(Base)",
+        "type": "Decimal",
+        "value": 50000
+      },
+      {
+        "id": 5416,
+        "name": "OutstandingQty(Base)",
+        "type": "Decimal",
+        "value": 50000
+      },
+      {
+        "id": 5417,
+        "name": "QtytoInvoice(Base)",
+        "type": "Decimal",
+        "value": 50000
+      },
+      {
+        "id": 5418,
+        "name": "QtytoShip(Base)",
+        "type": "Decimal",
+        "value": 50000
+      },
+      {
+        "id": 5458,
+        "name": "QtyShippedNotInvd(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5460,
+        "name": "QtyShipped(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5461,
+        "name": "QtyInvoiced(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5600,
+        "name": "FAPostingDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 5602,
+        "name": "DepreciationBookCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5605,
+        "name": "DepruntilFAPostingDate",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5612,
+        "name": "DuplicateinDepreciationBook",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5613,
+        "name": "UseDuplicationList",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5701,
+        "name": "OutofStockSubstitution",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5703,
+        "name": "OriginallyOrderedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5704,
+        "name": "OriginallyOrderedVarCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5709,
+        "name": "ItemCategoryCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5710,
+        "name": "Nonstock",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5711,
+        "name": "PurchasingCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5713,
+        "name": "SpecialOrder",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5714,
+        "name": "SpecialOrderPurchaseNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5715,
+        "name": "SpecialOrderPurchLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 5725,
+        "name": "ItemReferenceNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5726,
+        "name": "ItemReferenceUnitofMeasure",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5727,
+        "name": "ItemReferenceType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 5728,
+        "name": "ItemReferenceTypeNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5752,
+        "name": "CompletelyShipped",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5790,
+        "name": "RequestedDeliveryDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 5791,
+        "name": "PromisedDeliveryDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 5792,
+        "name": "ShippingTime",
+        "type": "DateFormula",
+        "value": null
+      },
+      {
+        "id": 5793,
+        "name": "OutboundWhseHandlingTime",
+        "type": "DateFormula",
+        "value": null
+      },
+      {
+        "id": 5794,
+        "name": "PlannedDeliveryDate",
+        "type": "Date",
+        "value": "2025-11-13"
+      },
+      {
+        "id": 5795,
+        "name": "PlannedShipmentDate",
+        "type": "Date",
+        "value": "2025-11-13"
+      },
+      {
+        "id": 5796,
+        "name": "ShippingAgentCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5797,
+        "name": "ShippingAgentServiceCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5800,
+        "name": "AllowItemChargeAssignment",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 5803,
+        "name": "ReturnQtytoReceive",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5804,
+        "name": "ReturnQtytoReceive(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5805,
+        "name": "ReturnQtyRcdNotInvd",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5806,
+        "name": "RetQtyRcdNotInvd(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5807,
+        "name": "ReturnRcdNotInvd",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5808,
+        "name": "ReturnRcdNotInvd(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5809,
+        "name": "ReturnQtyReceived",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5810,
+        "name": "ReturnQtyReceived(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5811,
+        "name": "ApplfromItemEntry",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 5909,
+        "name": "BOMItemNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6600,
+        "name": "ReturnReceiptNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6601,
+        "name": "ReturnReceiptLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 6608,
+        "name": "ReturnReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6610,
+        "name": "CopiedFromPostedDoc",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 7001,
+        "name": "AllowLineDisc",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 7002,
+        "name": "CustomerDiscGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7003,
+        "name": "Subtype",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 7004,
+        "name": "Pricedescription",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10000,
+        "name": "PackageTrackingNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10001,
+        "name": "RetentionAttachedtoLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 10002,
+        "name": "RetentionVAT%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 10003,
+        "name": "CustomTransitNumber",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10004,
+        "name": "SATCustomsDocumentType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 8053,
+        "name": "RecurringBillingfrom",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 8054,
+        "name": "RecurringBillingto",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 8058,
+        "name": "Discount",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 8059,
+        "name": "ExcludefromDocTotal",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6211,
+        "name": "SustAccountName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "SustAccountCategory",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "SustAccountSubcategory",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "CO2eperUnit",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6215,
+        "name": "TotalCO2e",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6216,
+        "name": "PostedTotalCO2e",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6217,
+        "name": "EPRFeePerUnit",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6218,
+        "name": "TotalEPRFee",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6219,
+        "name": "PostedTotalEPRFee",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 30100,
+        "name": "ShpfyOrderLineId",
+        "type": "BigInteger",
+        "value": 0
+      },
+      {
+        "id": 30101,
+        "name": "ShpfyOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30103,
+        "name": "ShpfyRefundId",
+        "type": "BigInteger",
+        "value": 0
+      },
+      {
+        "id": 30104,
+        "name": "ShpfyRefundLineId",
+        "type": "BigInteger",
+        "value": 0
+      },
+      {
+        "id": 30105,
+        "name": "ShpfyRefundShippingLineId",
+        "type": "BigInteger",
+        "value": 0
+      },
+      {
+        "id": 50300,
+        "name": "ExpectedReleaseDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50301,
+        "name": "Transportation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50302,
+        "name": "PickUpDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50303,
+        "name": "StrategicShipment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50304,
+        "name": "CoveredByInventory",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 50305,
+        "name": "ProductionOrderDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50306,
+        "name": "AssignedLotsOrPackages",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 50307,
+        "name": "WeekOf",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50308,
+        "name": "ProductionOrder",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 50309,
+        "name": "ShipPlantNotes",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 95,
+        "name": "ReservedQuantity",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 902,
+        "name": "ATOWhseOutstandingQty",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 903,
+        "name": "ATOWhseOutstdQty(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1300,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": "2025-11-13"
+      },
+      {
+        "id": 2677,
+        "name": "AllocAccModifiedbyUser",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5495,
+        "name": "ReservedQty(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5702,
+        "name": "SubstitutionAvailable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5749,
+        "name": "WhseOutstandingQty",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5750,
+        "name": "WhseOutstandingQty(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5801,
+        "name": "QtytoAssign",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5802,
+        "name": "QtyAssigned",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5812,
+        "name": "ItemChargeQtytoHandle",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 7010,
+        "name": "AttachedDocCount",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 7011,
+        "name": "AttachedLinesCount",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 7012,
+        "name": "SelltoCustomerName",
+        "type": "Text",
+        "value": "Blue Nile Trading"
+      },
+      {
+        "id": 8055,
+        "name": "SubscriptionLines",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 8057,
+        "name": "SubscriptionOption",
+        "type": "Option",
+        "value": "No Subscription"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "SalesLine",
+    "company": "PURIS Grains",
+    "position": "Document Type=CONST(Blanket Order),Document No.=CONST(BSO1003),Line No.=CONST(10000)",
+    "recordId": "Sales Line: Blanket Order,BSO1003,10000",
+    "primaryKey": {
+      "fieldCount": 3,
+      "fields": [
+        {
+          "id": 1,
+          "name": "DocumentType",
+          "type": "Option",
+          "value": "Blanket Order"
+        },
+        {
+          "id": 3,
+          "name": "DocumentNo",
+          "type": "Code",
+          "value": "BSO1003"
+        },
+        {
+          "id": 4,
+          "name": "LineNo",
+          "type": "Integer",
+          "value": 10000
+        }
+      ]
+    },
+    "fields": [
+      {
+        "id": 1,
+        "name": "DocumentType",
+        "type": "Option",
+        "value": "Blanket Order"
+      },
+      {
+        "id": 3,
+        "name": "DocumentNo",
+        "type": "Code",
+        "value": "BSO1003"
+      },
+      {
+        "id": 4,
+        "name": "LineNo",
+        "type": "Integer",
+        "value": 10000
+      },
+      {
+        "id": 2,
+        "name": "SelltoCustomerNo",
+        "type": "Code",
+        "value": "C000003"
+      },
+      {
+        "id": 5,
+        "name": "Type",
+        "type": "Option",
+        "value": "Item"
+      },
+      {
+        "id": 6,
+        "name": "No",
+        "type": "Code",
+        "value": "ITM000037"
+      },
+      {
+        "id": 7,
+        "name": "LocationCode",
+        "type": "Code",
+        "value": "RANDOLPH"
+      },
+      {
+        "id": 8,
+        "name": "PostingGroup",
+        "type": "Code",
+        "value": "ORG SOY NATTO FG"
+      },
+      {
+        "id": 10,
+        "name": "ShipmentDate",
+        "type": "Date",
+        "value": "2025-11-12"
+      },
+      {
+        "id": 11,
+        "name": "Description",
+        "type": "Text",
+        "value": "PS146-Natto-Finished Goods-ORG"
+      },
+      {
+        "id": 12,
+        "name": "Description2",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 13,
+        "name": "UnitofMeasure",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 15,
+        "name": "Quantity",
+        "type": "Decimal",
+        "value": 1500
+      },
+      {
+        "id": 16,
+        "name": "OutstandingQuantity",
+        "type": "Decimal",
+        "value": 1500
+      },
+      {
+        "id": 17,
+        "name": "QtytoInvoice",
+        "type": "Decimal",
+        "value": 1500
+      },
+      {
+        "id": 18,
+        "name": "QtytoShip",
+        "type": "Decimal",
+        "value": 1500
+      },
+      {
+        "id": 22,
+        "name": "UnitPrice",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 23,
+        "name": "UnitCost(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 25,
+        "name": "VAT%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 27,
+        "name": "LineDiscount%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 28,
+        "name": "LineDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 29,
+        "name": "Amount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 30,
+        "name": "AmountIncludingVAT",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 32,
+        "name": "AllowInvoiceDisc",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 34,
+        "name": "GrossWeight",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 35,
+        "name": "NetWeight",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 36,
+        "name": "UnitsperParcel",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 37,
+        "name": "UnitVolume",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 38,
+        "name": "AppltoItemEntry",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 40,
+        "name": "ShortcutDimension1Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 41,
+        "name": "ShortcutDimension2Code",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 42,
+        "name": "CustomerPriceGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 45,
+        "name": "JobNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 52,
+        "name": "WorkTypeCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 56,
+        "name": "RecalculateInvoiceDisc",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 57,
+        "name": "OutstandingAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 58,
+        "name": "QtyShippedNotInvoiced",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 59,
+        "name": "ShippedNotInvoiced",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 60,
+        "name": "QuantityShipped",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 61,
+        "name": "QuantityInvoiced",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 63,
+        "name": "ShipmentNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 64,
+        "name": "ShipmentLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 67,
+        "name": "Profit%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 68,
+        "name": "BilltoCustomerNo",
+        "type": "Code",
+        "value": "C000003"
+      },
+      {
+        "id": 69,
+        "name": "InvDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 71,
+        "name": "PurchaseOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 72,
+        "name": "PurchOrderLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 73,
+        "name": "DropShipment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 74,
+        "name": "GenBusPostingGroup",
+        "type": "Code",
+        "value": "CUSTOMER"
+      },
+      {
+        "id": 75,
+        "name": "GenProdPostingGroup",
+        "type": "Code",
+        "value": "ORG_SOY_NATTO"
+      },
+      {
+        "id": 77,
+        "name": "VATCalculationType",
+        "type": "Option",
+        "value": "Normal Tax"
+      },
+      {
+        "id": 78,
+        "name": "TransactionType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 79,
+        "name": "TransportMethod",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 80,
+        "name": "AttachedtoLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 81,
+        "name": "ExitPoint",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 82,
+        "name": "Area",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 83,
+        "name": "TransactionSpecification",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 84,
+        "name": "TaxCategory",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 85,
+        "name": "TaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 86,
+        "name": "TaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 87,
+        "name": "TaxGroupCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 88,
+        "name": "VATClauseCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 89,
+        "name": "VATBusPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 90,
+        "name": "VATProdPostingGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 91,
+        "name": "CurrencyCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 92,
+        "name": "OutstandingAmount(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 93,
+        "name": "ShippedNotInvoiced(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 94,
+        "name": "ShippedNotInv(LCY)NoVAT",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 96,
+        "name": "Reserve",
+        "type": "Option",
+        "value": "Optional"
+      },
+      {
+        "id": 97,
+        "name": "BlanketOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 98,
+        "name": "BlanketOrderLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 99,
+        "name": "VATBaseAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 100,
+        "name": "UnitCost",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 101,
+        "name": "SystemCreatedEntry",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 103,
+        "name": "LineAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 104,
+        "name": "VATDifference",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 105,
+        "name": "InvDiscAmounttoInvoice",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 106,
+        "name": "VATIdentifier",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 107,
+        "name": "ICPartnerRefType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 108,
+        "name": "ICPartnerReference",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 109,
+        "name": "Prepayment%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 110,
+        "name": "PrepmtLineAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 111,
+        "name": "PrepmtAmtInv",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 112,
+        "name": "PrepmtAmtInclVAT",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 113,
+        "name": "PrepaymentAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 114,
+        "name": "PrepmtVATBaseAmt",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 115,
+        "name": "PrepaymentVAT%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 116,
+        "name": "PrepmtVATCalcType",
+        "type": "Option",
+        "value": "Normal Tax"
+      },
+      {
+        "id": 117,
+        "name": "PrepaymentVATIdentifier",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 118,
+        "name": "PrepaymentTaxAreaCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 119,
+        "name": "PrepaymentTaxLiable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 120,
+        "name": "PrepaymentTaxGroupCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 121,
+        "name": "PrepmtAmttoDeduct",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 122,
+        "name": "PrepmtAmtDeducted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 123,
+        "name": "PrepaymentLine",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 124,
+        "name": "PrepmtAmountInvInclVAT",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 129,
+        "name": "PrepmtAmountInv(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 130,
+        "name": "ICPartnerCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 132,
+        "name": "PrepmtVATAmountInv(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 135,
+        "name": "PrepaymentVATDifference",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 136,
+        "name": "PrepmtVATDifftoDeduct",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 137,
+        "name": "PrepmtVATDiffDeducted",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 138,
+        "name": "ICItemReferenceNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 145,
+        "name": "PmtDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 146,
+        "name": "PrepmtPmtDiscountAmount",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 180,
+        "name": "LineDiscountCalculation",
+        "type": "Option",
+        "value": "None"
+      },
+      {
+        "id": 480,
+        "name": "DimensionSetID",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 900,
+        "name": "QtytoAssembletoOrder",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 901,
+        "name": "QtytoAsmtoOrder(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1001,
+        "name": "JobTaskNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1002,
+        "name": "JobContractEntryNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 1700,
+        "name": "DeferralCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 1702,
+        "name": "ReturnsDeferralStartDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 2675,
+        "name": "SelectedAllocAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 2678,
+        "name": "AllocationAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 2679,
+        "name": "AllocSalesLineSystemId",
+        "type": "GUID",
+        "value": "{00000000-0000-0000-0000-000000000000}"
+      },
+      {
+        "id": 5402,
+        "name": "VariantCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5403,
+        "name": "BinCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5404,
+        "name": "QtyperUnitofMeasure",
+        "type": "Decimal",
+        "value": 1
+      },
+      {
+        "id": 5405,
+        "name": "Planned",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5406,
+        "name": "QtyRoundingPrecision",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5408,
+        "name": "QtyRoundingPrecision(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5407,
+        "name": "UnitofMeasureCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5415,
+        "name": "Quantity(Base)",
+        "type": "Decimal",
+        "value": 1500
+      },
+      {
+        "id": 5416,
+        "name": "OutstandingQty(Base)",
+        "type": "Decimal",
+        "value": 1500
+      },
+      {
+        "id": 5417,
+        "name": "QtytoInvoice(Base)",
+        "type": "Decimal",
+        "value": 1500
+      },
+      {
+        "id": 5418,
+        "name": "QtytoShip(Base)",
+        "type": "Decimal",
+        "value": 1500
+      },
+      {
+        "id": 5458,
+        "name": "QtyShippedNotInvd(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5460,
+        "name": "QtyShipped(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5461,
+        "name": "QtyInvoiced(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5600,
+        "name": "FAPostingDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 5602,
+        "name": "DepreciationBookCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5605,
+        "name": "DepruntilFAPostingDate",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5612,
+        "name": "DuplicateinDepreciationBook",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5613,
+        "name": "UseDuplicationList",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5700,
+        "name": "ResponsibilityCenter",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5701,
+        "name": "OutofStockSubstitution",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5703,
+        "name": "OriginallyOrderedNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5704,
+        "name": "OriginallyOrderedVarCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5709,
+        "name": "ItemCategoryCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5710,
+        "name": "Nonstock",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5711,
+        "name": "PurchasingCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5713,
+        "name": "SpecialOrder",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5714,
+        "name": "SpecialOrderPurchaseNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5715,
+        "name": "SpecialOrderPurchLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 5725,
+        "name": "ItemReferenceNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5726,
+        "name": "ItemReferenceUnitofMeasure",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5727,
+        "name": "ItemReferenceType",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 5728,
+        "name": "ItemReferenceTypeNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5752,
+        "name": "CompletelyShipped",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5790,
+        "name": "RequestedDeliveryDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 5791,
+        "name": "PromisedDeliveryDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 5792,
+        "name": "ShippingTime",
+        "type": "DateFormula",
+        "value": null
+      },
+      {
+        "id": 5793,
+        "name": "OutboundWhseHandlingTime",
+        "type": "DateFormula",
+        "value": null
+      },
+      {
+        "id": 5794,
+        "name": "PlannedDeliveryDate",
+        "type": "Date",
+        "value": "2025-11-12"
+      },
+      {
+        "id": 5795,
+        "name": "PlannedShipmentDate",
+        "type": "Date",
+        "value": "2025-11-12"
+      },
+      {
+        "id": 5796,
+        "name": "ShippingAgentCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5797,
+        "name": "ShippingAgentServiceCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 5800,
+        "name": "AllowItemChargeAssignment",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 5803,
+        "name": "ReturnQtytoReceive",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5804,
+        "name": "ReturnQtytoReceive(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5805,
+        "name": "ReturnQtyRcdNotInvd",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5806,
+        "name": "RetQtyRcdNotInvd(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5807,
+        "name": "ReturnRcdNotInvd",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5808,
+        "name": "ReturnRcdNotInvd(LCY)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5809,
+        "name": "ReturnQtyReceived",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5810,
+        "name": "ReturnQtyReceived(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5811,
+        "name": "ApplfromItemEntry",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 5909,
+        "name": "BOMItemNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6600,
+        "name": "ReturnReceiptNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6601,
+        "name": "ReturnReceiptLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 6608,
+        "name": "ReturnReasonCode",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6610,
+        "name": "CopiedFromPostedDoc",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 7000,
+        "name": "PriceCalculationMethod",
+        "type": "Option",
+        "value": "Lowest Price"
+      },
+      {
+        "id": 7001,
+        "name": "AllowLineDisc",
+        "type": "Boolean",
+        "value": true
+      },
+      {
+        "id": 7002,
+        "name": "CustomerDiscGroup",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 7003,
+        "name": "Subtype",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 7004,
+        "name": "Pricedescription",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10000,
+        "name": "PackageTrackingNo",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10001,
+        "name": "RetentionAttachedtoLineNo",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 10002,
+        "name": "RetentionVAT%",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 10003,
+        "name": "CustomTransitNumber",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 10004,
+        "name": "SATCustomsDocumentType",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 8053,
+        "name": "RecurringBillingfrom",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 8054,
+        "name": "RecurringBillingto",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 8058,
+        "name": "Discount",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 8059,
+        "name": "ExcludefromDocTotal",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 6210,
+        "name": "SustAccountNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6211,
+        "name": "SustAccountName",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 6212,
+        "name": "SustAccountCategory",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6213,
+        "name": "SustAccountSubcategory",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 6214,
+        "name": "CO2eperUnit",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6215,
+        "name": "TotalCO2e",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6216,
+        "name": "PostedTotalCO2e",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6217,
+        "name": "EPRFeePerUnit",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6218,
+        "name": "TotalEPRFee",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 6219,
+        "name": "PostedTotalEPRFee",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 30100,
+        "name": "ShpfyOrderLineId",
+        "type": "BigInteger",
+        "value": 0
+      },
+      {
+        "id": 30101,
+        "name": "ShpfyOrderNo",
+        "type": "Code",
+        "value": null
+      },
+      {
+        "id": 30103,
+        "name": "ShpfyRefundId",
+        "type": "BigInteger",
+        "value": 0
+      },
+      {
+        "id": 30104,
+        "name": "ShpfyRefundLineId",
+        "type": "BigInteger",
+        "value": 0
+      },
+      {
+        "id": 30105,
+        "name": "ShpfyRefundShippingLineId",
+        "type": "BigInteger",
+        "value": 0
+      },
+      {
+        "id": 50300,
+        "name": "ExpectedReleaseDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50301,
+        "name": "Transportation",
+        "type": "Option",
+        "value": " "
+      },
+      {
+        "id": 50302,
+        "name": "PickUpDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50303,
+        "name": "StrategicShipment",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 50304,
+        "name": "CoveredByInventory",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 50305,
+        "name": "ProductionOrderDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50306,
+        "name": "AssignedLotsOrPackages",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 50307,
+        "name": "WeekOf",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 50308,
+        "name": "ProductionOrder",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 50309,
+        "name": "ShipPlantNotes",
+        "type": "Text",
+        "value": null
+      },
+      {
+        "id": 95,
+        "name": "ReservedQuantity",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 902,
+        "name": "ATOWhseOutstandingQty",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 903,
+        "name": "ATOWhseOutstdQty(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 1300,
+        "name": "PostingDate",
+        "type": "Date",
+        "value": null
+      },
+      {
+        "id": 2677,
+        "name": "AllocAccModifiedbyUser",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5495,
+        "name": "ReservedQty(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5702,
+        "name": "SubstitutionAvailable",
+        "type": "Boolean",
+        "value": false
+      },
+      {
+        "id": 5749,
+        "name": "WhseOutstandingQty",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5750,
+        "name": "WhseOutstandingQty(Base)",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5801,
+        "name": "QtytoAssign",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5802,
+        "name": "QtyAssigned",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 5812,
+        "name": "ItemChargeQtytoHandle",
+        "type": "Decimal",
+        "value": null
+      },
+      {
+        "id": 7010,
+        "name": "AttachedDocCount",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 7011,
+        "name": "AttachedLinesCount",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 7012,
+        "name": "SelltoCustomerName",
+        "type": "Text",
+        "value": "4M Farms"
+      },
+      {
+        "id": 8055,
+        "name": "SubscriptionLines",
+        "type": "Integer",
+        "value": null
+      },
+      {
+        "id": 8057,
+        "name": "SubscriptionOption",
+        "type": "Option",
+        "value": "No Subscription"
+      }
+    ]
+  }
+]

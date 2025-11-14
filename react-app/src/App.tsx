@@ -15,6 +15,7 @@ import { getTableData } from './modules/bcCalls';
 import { BinContent } from './components/binContents';
 
 import './App.css';
+import { GetMockData } from './components/GetMockData';
 
 
 function App() {
@@ -49,11 +50,13 @@ function App() {
   };
 
   useEffect(() => {
+
     const handler = (e: Event): void => {
       const customEvent = e as CustomEvent;
       handleReceiveData(JSON.stringify(customEvent.detail));
       console.log(customEvent.detail);
     };
+
     window.addEventListener('BCData', handler);
     return () => {
       window.removeEventListener('BCData', handler);
@@ -104,10 +107,11 @@ function App() {
   return (
     <div className='primaryContainer'>
       <h5>BCinReact</h5>
+      <GetMockData />
 
-      <BinContent records={records} setRecords={setRecords} />
+      {/* <BinContent records={records} setRecords={setRecords} /> */}
 
-      <div className='buttonContainer'>
+      {/* <div className='buttonContainer'>
         <button onClick={handleAddLine}>Add Line</button>
         <button onClick={saveToBC}>Send Data to BC</button>
         <button onClick={() => getTableData(7302, 1, "DAWSON")}>Get Table Data Puris Users</button>
@@ -118,7 +122,7 @@ function App() {
           <input type='text' onChange={(e) => setChangeData1(e.target.value)} placeholder='Data1' value={changeData1}></input>
           <button type='submit'>Submit</button>
         </form>
-      </div>
+      </div> */}
 
 
       <div className='secondaryContainer' style={{ display: 'none' }}>

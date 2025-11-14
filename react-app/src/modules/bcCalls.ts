@@ -13,6 +13,7 @@ export const getTableData = (
     };
 
     const event = new CustomEvent('BCData', { detail: data });
+    window.dispatchEvent(event);
     console.log(event);
   } else {
     Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('GetTable', [

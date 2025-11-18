@@ -106,8 +106,7 @@ function App() {
 
   return (
     <div className='primaryContainer'>
-      <h5>BCinReact</h5>
-      <GetMockData />
+      {/* <GetMockData /> */}
 
       <BinContent records={records} setRecords={setRecords} />
 

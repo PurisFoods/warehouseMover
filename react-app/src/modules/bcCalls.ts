@@ -13,12 +13,7 @@ export const getTableData = async (
       if (!response.ok) throw new Error('Mock data not found');
       let data = await response.json();
 
-      // Ensure data is always an array
-      // if (!Array.isArray(data)) {
-      //   data = [data];
-      // }
-
-      // Enhanced filtering for nested fields array
+      // Filtering
       if (filterField && filterText) {
         data = data.filter((record: any) => {
           // Try direct property first
@@ -40,6 +35,9 @@ export const getTableData = async (
           return false;
         });
       }
+
+      // Limit to maxRecords
+      data = data.slice(0, maxRecords);
 
       // Simulate BC event
       const event = new CustomEvent('BCData', { detail: data });

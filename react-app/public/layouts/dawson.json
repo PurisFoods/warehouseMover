@@ -1,0 +1,48 @@
+{
+    "location": "DAWSON",
+    "grid": [
+        {
+            "rows": 14,
+            "columns": 20,
+            "bays": [{
+                "bayId": 1,
+                "startRow": 1,
+                "startColumn": 1,
+                "rowSpan": 1,
+                "colSpan": 1,
+                "levels": [
+                    {
+                        "name": "C",
+                        "positions": 2
+                    },
+                    {
+                        "name": "B",
+                        "positions": 1
+                    },
+                    {
+                        "name": "A",
+                        "positions": 1
+                    }
+                ]
+            },
+            {
+                "bayId": 2,
+                "startRow": 1,
+                "startColumn": 2,
+                "rowSpan": 2,
+                "colSpan": 3,
+                "levels": [
+                    {
+                        "name": "C",
+                        "positions": 4
+                    },
+                    {
+                        "name": "B",
+                        "positions": 2
+                    }
+                ]
+            }
+        ]
+    }
+]
+}

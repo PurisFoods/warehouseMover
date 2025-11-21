@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', mountApp);
 };
 
 window.addEventListener('BCData', (event: CustomEvent) => {
-  const dataArray = event.detail[0];
+  const dataArray = event.detail;
 
   if (Array.isArray(dataArray) && dataArray.length > 1) {
     const header = dataArray[0];
@@ -63,10 +63,13 @@ window.addEventListener('BCData', (event: CustomEvent) => {
     const tableNumber = header.tableNumber || 'unknown';
     capturedBCData.set(tableNumber, []);
     console.log(`✓ Captured table ${tableNumber} (${header.tableName}), 0 records`);
+    console.log(capturedBCData);
+
   } else {
     const tableNumber = dataArray.id || 'unknown';
     capturedBCData.set(tableNumber, [dataArray]);
     console.log(`✓ Captured table ${tableNumber}`);
+    console.log(capturedBCData);
   }
 });
 

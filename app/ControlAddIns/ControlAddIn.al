@@ -1,7 +1,7 @@
 controladdin warehouseMoverControlAddIn
 {
-    Scripts = 'scripts/index-BnEZXV1M.js';
-    StyleSheets = 'scripts/index-D96AF_Jt.css';
+    Scripts = 'scripts/index-BxAv647i.js';
+    StyleSheets = 'scripts/index-DdgvXn9G.css';
     RequestedHeight = 0;
     RequestedWidth = 0;
     VerticalStretch = true;
@@ -10,5 +10,6 @@ controladdin warehouseMoverControlAddIn
     procedure SendDataToReact(messageData: Text);
     event ReceiveDataFromReact(JsonArrayString: Text);
     event GetTable(tableNumber: Integer; maxRecords: Integer; filterField: Integer; filterText: Text);
+    event UpdateRow(tableNumber: Integer; rowData: Text);
 
 }

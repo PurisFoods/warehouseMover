@@ -11,10 +11,13 @@ page 50260 "WarehouseMover"
             usercontrol("WarehouseMover"; warehouseMoverControlAddIn)
             {
                 trigger ReceiveDataFromReact(JsonArrayString: Text)
-                var
-                    ReactTableManagement: Codeunit ReactTableManagement;
                 begin
                     ReactTableManagement.runUpdatesFromReact(JsonArrayString);
+                end;
+
+                trigger UpdateRow(tableNumber: Integer; rowData: Text)
+                begin
+                    ReactTableManagement.runUpdatesFromReact(rowData);
                 end;
 
                 trigger GetTable(tableNumber: Integer; maxRecords: Integer; filterField: Integer; filterText: Text)
@@ -31,21 +34,17 @@ page 50260 "WarehouseMover"
                 begin
                     RecRef.Open(tableNumber);
                     recordCounter := 0;
-
                     // Only apply filter if both filterField and filterText are provided
                     if (filterField > 0) and (filterText <> '') then begin
                         filterRef := RecRef.Field(filterField);
                         filterString := StrSubstNo('WHERE(%1=1(%2))', filterRef.Name, filterText);
                         RecRef.SetView(filterString);
                     end;
-
                     if RecRef.FindSet() then begin
                         jsonArray.Add(jsonHelper.RecordsToJsonArrayWithHeader(RecRef, maxRecords));
                     end;
                     jsonArray.WriteTo(data);
-
                     CurrPage.WarehouseMover.SendDataToReact(data);
-
                 end;
 
 
@@ -90,6 +89,8 @@ page 50260 "WarehouseMover"
             }
         }
     }
+    var
+        ReactTableManagement: Codeunit ReactTableManagement;
 
     // local procedure ProcessJsonObject(JsonObject: JsonObject): Text
     // var

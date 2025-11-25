@@ -1,5 +1,33 @@
 import { isDevEnv } from './enviornment';
 
+import type {
+  RecordsState,
+  TableMetaData,
+  TableRecord,
+} from '../types/baseDataTypes';
+
+export const updateRow = async (
+  tableData: TableMetaData,
+  rowData: TableRecord
+) => {
+  if (isDevEnv()) {
+    return;
+  }
+
+  let data: RecordsState;
+  let success: boolean;
+  data.push(tableData);
+  data.push(rowData);
+  Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
+    'UpdateRow',
+    [data],
+    success
+  );
+  if (success) {
+    console.log('Row updated in BC');
+  } else console.error('Row failed to update in BC');
+};
+
 export const getTableData = async (
   tableNumber: number,
   maxRecords: number,

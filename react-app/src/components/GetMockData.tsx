@@ -7,7 +7,7 @@ import { getTableData } from "../modules/bcCalls";
 export const GetMockData: React.FC = () => {
 
     const [table, setTable] = useState<number>(0);
-    const [maxRecords, setMaxRecords] = useState<number>(20);
+    const [maxRecords, setMaxRecords] = useState<number>(5);
 
     const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();

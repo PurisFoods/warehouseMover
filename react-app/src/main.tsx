@@ -52,6 +52,7 @@ window.addEventListener('BCData', (event: CustomEvent) => {
 
   if (Array.isArray(dataArray) && dataArray.length > 1) {
     const header = dataArray[0];
+    // const records = dataArray.slice(1);
     const tableNumber = header.tableNumber || 'unknown';
 
     capturedBCData.set(tableNumber, dataArray);

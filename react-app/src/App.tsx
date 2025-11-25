@@ -56,8 +56,6 @@ function App() {
     }
   }, []);
 
-
-
   const handleAddLine = () => {
     const data: Partial<SimpleRecord> = {
       "UserName": 'newReactUser',
@@ -99,6 +97,8 @@ function App() {
 
   return (
     <div className='primaryContainer'>
+
+      <h5>BCinReact</h5>
       <GetMockData />
 
       {/* <BinContent records={records} setRecords={setRecords} /> */}

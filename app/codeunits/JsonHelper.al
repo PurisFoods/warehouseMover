@@ -180,7 +180,6 @@ codeunit 50260 JsonHelper
         PrimaryKey: JsonArray;
         recordCounter: Integer;
     begin
-        Message(format(maxRecords));
         // Build header
         Header.Add('tableNumber', RecRef.Number());
         Header.Add('tableName', RecRef.Name());

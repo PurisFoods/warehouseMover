@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { FluentProvider, webLightTheme } from '@fluentui/react-components';
+
 import App from './App.js'
 
 declare global {
@@ -56,17 +57,17 @@ window.addEventListener('BCData', (event: CustomEvent) => {
     const tableNumber = header.tableNumber || 'unknown';
 
     capturedBCData.set(tableNumber, dataArray);
-    console.log(`✓ Captured table ${tableNumber} (${header.tableName}), ${dataArray.length} records`);
+    console.log(`✅ Captured table ${tableNumber} (${header.tableName}), ${dataArray.length} records`);
   } else if (Array.isArray(dataArray) && dataArray.length === 1) {
     // Only header, no records
     const header = dataArray[0];
     const tableNumber = header.tableNumber || 'unknown';
     capturedBCData.set(tableNumber, []);
-    console.log(`✓ Captured table ${tableNumber} (${header.tableName}), 0 records`);
+    console.log(`✅ Captured table ${tableNumber} (${header.tableName}), 0 records`);
   } else {
     const tableNumber = dataArray.id || 'unknown';
     capturedBCData.set(tableNumber, [dataArray]);
-    console.log(`✓ Captured table ${tableNumber}`);
+    console.log(`✅ Captured table ${tableNumber}`);
   }
 });
 
@@ -76,7 +77,7 @@ window.downloadBCData = function downloadBCData(tableNumber?: number) {
     : Object.fromEntries(capturedBCData);
 
   if (!dataToDownload) {
-    console.error(`No data captured for table ${tableNumber}`);
+    console.error(`❌ No data captured for table ${tableNumber}`);
     return;
   }
 
@@ -87,7 +88,7 @@ window.downloadBCData = function downloadBCData(tableNumber?: number) {
   link.download = `${tableNumber || 'allMockData'}.json`;
   link.click();
   URL.revokeObjectURL(url);
-  console.log(`✓ Downloaded ${link.download}`);
+  console.log(`Downloaded ${link.download}`);
 };
 
 console.log('downloadBCData assigned:', typeof window.downloadBCData);

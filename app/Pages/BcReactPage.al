@@ -23,10 +23,8 @@ page 50260 "WarehouseMover"
                     filterRef: FieldRef;
                     filterString: Text;
                     jsonHelper: Codeunit JsonHelper;
-                    jsonReader: Codeunit "Json Text Reader/Writer";
                     json: Codeunit Json;
                     rec: Variant;
-                    jsonManage: Codeunit "JSON Management";
                     data: Text;
                     jsonArray: JsonArray;
                     recordCounter: Integer;

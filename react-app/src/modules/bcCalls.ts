@@ -35,12 +35,13 @@ export const getTableData = async (
           return false;
         });
       }
+      console.log('MaxRecords', maxRecords);
 
       // Limit to maxRecords
-      data = data.slice(0, maxRecords);
+      const limitedData = data.slice(0, maxRecords);
 
       // Simulate BC event
-      const event = new CustomEvent('BCData', { detail: data });
+      const event = new CustomEvent('BCData', { detail: limitedData });
       window.dispatchEvent(event);
       console.log('Dispatched mock BCData event:', event);
     } catch (err) {

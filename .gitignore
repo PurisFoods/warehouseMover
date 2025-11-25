@@ -30,3 +30,4 @@ app/scripts/*.js
 app/scripts/*.css
 
 react-app/public/mockData/*
+app/.vscode/.alcache/*

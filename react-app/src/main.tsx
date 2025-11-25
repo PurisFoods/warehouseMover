@@ -52,11 +52,10 @@ window.addEventListener('BCData', (event: CustomEvent) => {
 
   if (Array.isArray(dataArray) && dataArray.length > 1) {
     const header = dataArray[0];
-    const records = dataArray.slice(1);
     const tableNumber = header.tableNumber || 'unknown';
 
-    capturedBCData.set(tableNumber, records);
-    console.log(`✓ Captured table ${tableNumber} (${header.tableName}), ${records.length} records`);
+    capturedBCData.set(tableNumber, dataArray);
+    console.log(`✓ Captured table ${tableNumber} (${header.tableName}), ${dataArray.length} records`);
   } else if (Array.isArray(dataArray) && dataArray.length === 1) {
     // Only header, no records
     const header = dataArray[0];

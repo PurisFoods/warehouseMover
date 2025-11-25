@@ -1,14 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {
-  parseBCJson,
-  serializeToBCJson,
-}
-  from './modules/bcTransformer';
-import type {
-  SimpleRecord,
-  BCRecord
-}
-  from './modules/bcTransformer';
+import { serializeToBCJson } from './modules/bcTransformer';
+import type { SimpleRecord, BCRecord } from './modules/bcTransformer';
 
 import { getTableData } from './modules/bcCalls';
 
@@ -16,6 +8,7 @@ import { BinContent } from './components/BinContents';
 
 import './App.css';
 import { GetMockData } from './components/GetMockData';
+import { ButtonsBox } from './components/ButtonsBox';
 
 
 function App() {
@@ -106,9 +99,9 @@ function App() {
 
   return (
     <div className='primaryContainer'>
-      {/* <GetMockData /> */}
+      <GetMockData />
 
-      <BinContent records={records} setRecords={setRecords} />
+      {/* <BinContent records={records} setRecords={setRecords} /> */}
 
       {/* <div className='buttonContainer'>
         <button onClick={handleAddLine}>Add Line</button>

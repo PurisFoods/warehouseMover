@@ -198,11 +198,13 @@ codeunit 50260 JsonHelper
         // Add records with limit
         recordCounter := 0;
         if RecRef.FindSet() then
-            repeat
-                RecordObj := RecordToJsonFlat(RecRef);
-                JsonArray.Add(RecordObj);
-                recordCounter += 1;
-            until (RecRef.Next() = 0) or (recordCounter >= MaxRecords);
+            if (maxRecords = 0) then
+                maxRecords := RecRef.Count();
+        repeat
+            RecordObj := RecordToJsonFlat(RecRef);
+            JsonArray.Add(RecordObj);
+            recordCounter += 1;
+        until (RecRef.Next() = 0) or (recordCounter >= MaxRecords);
 
         exit(JsonArray);
     end;

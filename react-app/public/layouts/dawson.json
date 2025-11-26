@@ -2,6 +2,7 @@
     "location": "DAWSON",
     "grid": [
         {
+            "bayId": 1,
             "rows": 14,
             "columns": 20,
             "bays": [{

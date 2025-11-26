@@ -12,6 +12,7 @@ page 50260 "WarehouseMover"
             {
                 trigger ReceiveDataFromReact(JsonArrayString: Text)
                 begin
+                    Message('Receive Data from React - %1', JsonArrayString);
                     ReactTableManagement.runUpdatesFromReact(JsonArrayString);
                 end;
 

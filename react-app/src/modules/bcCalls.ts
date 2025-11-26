@@ -14,10 +14,8 @@ export const updateRow = async (
     return;
   }
 
-  let data: RecordsState;
-  let success: boolean;
-  data.push(tableData);
-  data.push(rowData);
+  const data: RecordsState = [tableData, rowData];
+  let success: boolean = false;
   Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
     'UpdateRow',
     [data],

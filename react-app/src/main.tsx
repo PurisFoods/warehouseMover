@@ -36,11 +36,16 @@ document.addEventListener('DOMContentLoaded', mountApp);
 
 (window as any).SendDataToReact = (jsonData: string) => {
   try {
-    const data = JSON.parse(jsonData);
-
-    console.log(typeof data, data.length);
+    let data = JSON.parse(jsonData);
+    console.log('parsed data from BC - type:', typeof data, 'length:', data?.length);
     console.log('parsed data from BC', data);
-
+    
+    // Unwrap if BC sent it double-wrapped
+    if (Array.isArray(data) && data.length === 1 && Array.isArray(data[0])) {
+      console.log('Unwrapping double-wrapped data from BC');
+      data = data[0];
+    }
+    
     const event = new CustomEvent('BCData', { detail: data });
     window.dispatchEvent(event);
   } catch (e) {
@@ -49,23 +54,21 @@ document.addEventListener('DOMContentLoaded', mountApp);
 };
 
 window.addEventListener('BCData', (event: CustomEvent) => {
-  const dataArray = event.detail[0];
-
+  console.log('BCData event received', event);
+  const dataArray = event.detail; // Now this should be the unwrapped array
+  
   if (Array.isArray(dataArray) && dataArray.length > 1) {
     const header = dataArray[0];
-    // const records = dataArray.slice(1);
     const tableNumber = header.tableNumber || 'unknown';
-
     capturedBCData.set(tableNumber, dataArray);
     console.log(`✅ Captured table ${tableNumber} (${header.tableName}), ${dataArray.length} records`);
   } else if (Array.isArray(dataArray) && dataArray.length === 1) {
-    // Only header, no records
     const header = dataArray[0];
     const tableNumber = header.tableNumber || 'unknown';
     capturedBCData.set(tableNumber, []);
     console.log(`✅ Captured table ${tableNumber} (${header.tableName}), 0 records`);
   } else {
-    const tableNumber = dataArray.id || 'unknown';
+    const tableNumber = dataArray?.id || 'unknown';
     capturedBCData.set(tableNumber, [dataArray]);
     console.log(`✅ Captured table ${tableNumber}`);
   }

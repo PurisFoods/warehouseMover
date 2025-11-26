@@ -9,27 +9,26 @@ import { BinContent } from './components/BinContents';
 import './App.css';
 import { GetMockData } from './components/GetMockData';
 import { ButtonsBox } from './components/ButtonsBox';
-import { TableGrid } from './components/tableGrid';
+import { TableGrid } from './components/TableGrid';
 
 
 function App() {
   const [records, setRecords] = useState<RecordsState>();
-  const [changeData1, setChangeData1] = useState<string>('');
-  const [tableNumber, setTableNumber] = useState<number>(27);
+  const [tableNumber, setTableNumber] = useState<number>(37);
   const [maxRecords, setMaxRecords] = useState<number>(5);
 
-  const handleReceiveData = (data: RecordsState) => {
-    // const simpleRecords = parseBCJson(jsonString);
-    // const bcRecords = JSON.parse(jsonString);
-    setRecords(data);
-    // setOriginalBCRecords(bcRecords);
-  };
+  // const handleReceiveData = (data: RecordsState) => {
+  //   // const simpleRecords = parseBCJson(jsonString);
+  //   // const bcRecords = JSON.parse(jsonString);
+  //   setRecords(data);
+  //   // setOriginalBCRecords(bcRecords);
+  // };
 
   useEffect(() => {
     const handler = (e: Event): void => {
       const customEvent = e as CustomEvent;
       setRecords(customEvent.detail);
-      console.log(customEvent.detail);
+      console.log('customEvent.detail', customEvent.detail);
     };
 
     window.addEventListener('BCData', handler);
@@ -37,6 +36,10 @@ function App() {
       window.removeEventListener('BCData', handler);
     }
   }, []);
+
+  useEffect(() => {
+    console.log('Records useEffect', records);
+  },[records])
 
 
   const handleGrid = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -63,9 +66,11 @@ function App() {
           <button type='submit' onClick={handleGrid}>Go</button>
         </form>
         </div>
+        <div style={{ border: '1px solid pink'}}>
         {records &&
           <TableGrid records={records} setRecords={setRecords} />
         }
+        </div>
       </div>
 
       {/* <BinContent records={records} setRecords={setRecords} /> */}

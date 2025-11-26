@@ -54,7 +54,7 @@ function App() {
       <h5>BCinReact</h5>
       {/* <GetMockData /> */}
       <div className='secondaryContainer'>
-
+        <div className='gridBox'>
         <form>
           <label>Enter Table Number for datagrid</label>
           <input type='text' value={tableNumber.toString()} onChange={(e) => setTableNumber(Number(e.target.value))} />
@@ -62,6 +62,7 @@ function App() {
           <input type='text' value={maxRecords.toString()} onChange={(e) => setMaxRecords(Number(e.target.value))} />
           <button type='submit' onClick={handleGrid}>Go</button>
         </form>
+        </div>
         {records &&
           <TableGrid records={records} setRecords={setRecords} />
         }

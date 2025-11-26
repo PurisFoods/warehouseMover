@@ -64,7 +64,10 @@ export const getTableData = async (
         });
       }
       console.log('MaxRecords', maxRecords);
-
+      if (maxRecords === 0){
+        maxRecords = data.length;
+        console.log(data.length);
+      }
       // Limit to maxRecords
       const limitedData = data.slice(0, maxRecords);
 

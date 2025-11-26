@@ -19,7 +19,7 @@ export const GetMockData: React.FC = () => {
     }
 
     return (
-        <div style={{ margin: '2em' }}>
+        <div style={{ margin: '2em', padding: '1em' }}>
             <form>
                 <label>Table Number:</label>
                 <input placeholder="Table Number" value={table} onChange={(e) => setTable(Number(e.target.value))} />

@@ -1,13 +1,13 @@
 codeunit 50261 ReactTableManagement
 {
-    procedure runUpdatesFromReact(JsonArrayString: Text)
+    procedure runUpdatesFromReact(tableNumber: Integer; JsonArrayString: Text)
     var
         RecRef: RecordRef;
         jsonArray: JsonArray;
         jsonToken: JsonToken;
         tableNameToken: JsonToken;
         i: Integer;
-        tableNumber: Integer;
+    // tableNumber: Integer;
     begin
         // Parse the JSON array from React
         if not jsonArray.ReadFrom(JsonArrayString) then begin
@@ -16,15 +16,10 @@ codeunit 50261 ReactTableManagement
         if jsonArray.Count() = 0 then begin
             Error('No records to update');
         end;
-        // Get table number from first record
-        jsonArray.Get(0, jsonToken);
 
-        if not jsonToken.AsObject().Contains('name') then begin
-            Error('JSON does not contain table name. JSON: ' + Format(jsonToken));
-        end;
 
         jsonToken.AsObject().Get('name', tableNameToken);
-        tableNumber := GetTableNumberFromName(tableNameToken.AsValue().AsText());
+        // tableNumber := GetTableNumberFromName(tableNameToken.AsValue().AsText());
 
         RecRef.Open(tableNumber);
         // Process each record

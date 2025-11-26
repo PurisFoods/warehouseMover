@@ -22,8 +22,8 @@ export const TableGrid: React.FC<TableGridProps> = ({ records, setRecords }) => 
     const [columns, setColumns] = useState<any>({});
     const gridRef = useRef<AgGridReact>(null);
 
-    console.log('Records Prop', records);
-    console.log('Records prop length', records?.length);
+    // console.log('Records Prop', records);
+    // console.log('Records prop length', records?.length);
 
     function sanitizeFieldName(name: string): string {
         return name.replace(/[^a-zA-Z0-9_]/g, '');
@@ -95,8 +95,8 @@ const handleCellEditing = (e: CellValueChangedEvent<TableRecord>) => {
             return isMatch ? { ...record, ...e.data } : record;
         })
     );
-    
     updateRow(records[0], e.data);
+    
 }
 
     const handleUndo = () => {

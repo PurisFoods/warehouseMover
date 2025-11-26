@@ -10,19 +10,13 @@ import './App.css';
 import { GetMockData } from './components/GetMockData';
 import { ButtonsBox } from './components/ButtonsBox';
 import { TableGrid } from './components/TableGrid';
+import { Button } from '@fluentui/react-components';
 
 
 function App() {
   const [records, setRecords] = useState<RecordsState>();
   const [tableNumber, setTableNumber] = useState<number>(37);
   const [maxRecords, setMaxRecords] = useState<number>(5);
-
-  // const handleReceiveData = (data: RecordsState) => {
-  //   // const simpleRecords = parseBCJson(jsonString);
-  //   // const bcRecords = JSON.parse(jsonString);
-  //   setRecords(data);
-  //   // setOriginalBCRecords(bcRecords);
-  // };
 
   useEffect(() => {
     const handler = (e: Event): void => {
@@ -49,7 +43,11 @@ function App() {
 
   useEffect(() => {
     console.log('innerHeight', window.innerHeight);
-  }, [window.innerHeight])
+  }, [window.innerHeight]);
+
+  const handleTriggerBC = () => {
+    Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ReceiveDataFromReact', ["message from react - blargh!"]);
+  }
 
   return (
     <div className='primaryContainer'>
@@ -57,7 +55,8 @@ function App() {
       <h5>BCinReact</h5>
       {/* <GetMockData /> */}
       <div className='secondaryContainer'>
-        <div className='gridBox'>
+        <div className='gridBox' style={{width: '100%', height: '100%'}}>
+          <Button onClick={handleTriggerBC}>Trigger BC</Button>
         <form>
           <label>Enter Table Number for datagrid</label>
           <input type='text' value={tableNumber.toString()} onChange={(e) => setTableNumber(Number(e.target.value))} />

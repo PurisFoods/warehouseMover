@@ -13,12 +13,13 @@ page 50260 "WarehouseMover"
                 trigger ReceiveDataFromReact(JsonArrayString: Text)
                 begin
                     Message('Receive Data from React - %1', JsonArrayString);
-                    ReactTableManagement.runUpdatesFromReact(JsonArrayString);
+                    // ReactTableManagement.runUpdatesFromReact(JsonArrayString);
                 end;
 
                 trigger UpdateRow(tableNumber: Integer; rowData: Text)
                 begin
-                    ReactTableManagement.runUpdatesFromReact(rowData);
+                    Message('Table number %1 - rowData %2', tableNumber, rowData);
+                    ReactTableManagement.runUpdatesFromReact(tableNumber, rowData);
                 end;
 
                 trigger GetTable(tableNumber: Integer; maxRecords: Integer; filterField: Integer; filterText: Text)
@@ -67,11 +68,15 @@ page 50260 "WarehouseMover"
                     purisUsers: Record PurisUsers;
                     tableSelection: RecordRef;
                     RecRef: RecordRef;
-                    jsonArray: Text;
+                    jsonArray: JsonArray;
+                    data: Text;
+                    jsonHelper: Codeunit JsonHelper;
                 begin
                     tableSelection.Open(Database::PurisUsers);
                     RecRef.Open(Database::PurisUsers);
-                    CurrPage.WarehouseMover.SendDataToReact(jsonArray);
+                    jsonArray.Add(jsonHelper.RecordsToJsonArrayWithHeader(RecRef, 0));
+                    jsonArray.WriteTo(data);
+                    CurrPage.WarehouseMover.SendDataToReact(data);
                 end;
             }
             action(DeleteRecords)

@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', mountApp);
 (window as any).SendDataToReact = (jsonData: string) => {
   try {
     let data = JSON.parse(jsonData);
-    console.log('parsed data from BC - type:', typeof data, 'length:', data?.length);
-    console.log('parsed data from BC', data);
+    // console.log('parsed data from BC - type:', typeof data, 'length:', data?.length);
+    // console.log('parsed data from BC', data);
     
     // Unwrap if BC sent it double-wrapped
     if (Array.isArray(data) && data.length === 1 && Array.isArray(data[0])) {
-      console.log('Unwrapping double-wrapped data from BC');
+      // console.log('Unwrapping double-wrapped data from BC');
       data = data[0];
     }
     

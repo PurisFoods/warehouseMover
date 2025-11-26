@@ -10,17 +10,24 @@ export const updateRow = async (
   tableData: TableMetaData,
   rowData: TableRecord
 ) => {
+
+  console.log('isDev', isDevEnv());
+  
   if (isDevEnv()) {
     return;
   }
 
   const data: RecordsState = [tableData, rowData];
   let success: boolean = false;
-  Microsoft.Dynamics.NAV.InvokeExtensibilityMethod(
-    'UpdateRow',
-    [data],
-    success
-  );
+
+  console.log('UpdateRow data', data);
+  console.log(typeof data);
+
+  // ! Function call is silently failing on the AL side due to data mismatch
+  Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('UpdateRow', [tableData, rowData]);
+  // Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('ReceiveDataFromReact', [data]);
+    // Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ReceiveDataFromReact', ["message from react - blargh!"]);
+
   if (success) {
     console.log('Row updated in BC');
   } else console.error('Row failed to update in BC');

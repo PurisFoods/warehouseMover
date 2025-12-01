@@ -3,8 +3,8 @@
     "grid": [
         {
             "bayId": 1,
-            "rows": 14,
-            "columns": 20,
+            "rows": 7,
+            "columns": 33,
             "bays": [{
                 "bayId": 1,
                 "startRow": 1,
@@ -35,11 +35,15 @@
                 "levels": [
                     {
                         "name": "C",
-                        "positions": 4
+                        "positions": 2
                     },
                     {
                         "name": "B",
-                        "positions": 2
+                        "positions": 1
+                    },
+                    {
+                        "name":"A",
+                        "positions": 1
                     }
                 ]
             }

@@ -4,6 +4,7 @@ import { Button } from '@fluentui/react-components';
 
 export const LayoutBuilder: React.FC = () => {
     const [grid, setGrid] = useState<GridType>();
+    const [stackLevel, setStackLevel] = useState(2);
 
     useEffect(() => {
         const data: GridType = {
@@ -36,6 +37,12 @@ export const LayoutBuilder: React.FC = () => {
                             "level": 1,
                             "bayName": "A5",
                             "positions": 2
+                        },
+                        {
+                            "id": 4,
+                            "level": 2,
+                            "bayName": "B7",
+                            "positions": 1
                         }
                     ]
                 }
@@ -70,7 +77,7 @@ export const LayoutBuilder: React.FC = () => {
 
             const newLevel = {
                 id: Math.max(...prevState.bayColumn.flatMap(b => b.levels.map(l => l.id))) + 1,
-                level: 1,
+                level: stackLevel,
                 bayName: "New",
                 positions: 2
             };
@@ -101,19 +108,26 @@ export const LayoutBuilder: React.FC = () => {
                                 Stacks: {grid.stacks}
                             </pre>
                         </h6>
+                        {Array.from({ length: grid.stacks }).map((_, i) => (
+                            <button key={i} onClick={() => setStackLevel(i + 1)}>{i + 1}</button>
+                        ))}
                     </div>
                     <div className='gridTemplateBox'>
-
                         {grid.bayColumn.map((bayItem, bayIndex) => (
+
                             <div className='gridBox' key={bayItem.bayId}>
                                 <div className='gridHeader' onClick={() => handleAddColumn()}>
                                     {bayItem.bayName}
 
                                 </div>
                                 {bayItem.levels.map((bayBox) => (
+                                    bayBox.level == stackLevel &&
+
                                     <div className='bayBox' key={bayBox.id}>
                                         {bayBox.bayName}
                                     </div>
+
+
                                 ))}
                                 <button onClick={() => handleAddRow(bayIndex)}>+</button>
                             </div>

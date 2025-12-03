@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, use } from 'react';
 import type { BayType, GridType } from '../types/gridTypes';
 import { Button } from '@fluentui/react-components';
 
@@ -115,6 +115,73 @@ export const LayoutBuilder: React.FC = () => {
         });
     };
 
+    const handleKeyDown = (
+        e: React.KeyboardEvent<HTMLInputElement>,
+        bayIndex: number,
+        levelIndex: number,
+        totalBays: number,
+        totalLevels: number): void => {
+
+
+        console.log(e.key);
+
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            let nextBayIndex: number = bayIndex;
+            let nextlevelIndex: number = levelIndex + 1;
+
+            if (nextlevelIndex >= totalLevels) {
+                nextlevelIndex = 0;
+                nextBayIndex = (bayIndex + 1) % totalBays;
+            }
+
+            setEditingCell({ bayIndex: nextBayIndex, levelIndex: nextlevelIndex });
+
+        } else if (e.key === 'Tab') {
+            e.preventDefault();
+            if (e.shiftKey) {
+                // Move to previous bay, or to end of previous level if on first bay
+                let prevBayIndex: number = bayIndex - 1;
+                let prevLevelIndex: number = levelIndex;
+
+                if (prevBayIndex < 0) {
+                    prevBayIndex = totalBays - 1;
+                    prevLevelIndex = levelIndex - 1;
+
+                    if (prevLevelIndex < 0) {
+                        prevLevelIndex = totalLevels - 1;
+                    }
+                }
+
+                setEditingCell({ bayIndex: prevBayIndex, levelIndex: prevLevelIndex });
+            } else {
+                // Move to next bay, or to start of next level if at end of row
+                let nextBayIndex: number = bayIndex + 1;
+                let nextLevelIndex: number = levelIndex;
+
+                if (nextBayIndex >= totalBays) {
+                    nextBayIndex = 0;
+                    nextLevelIndex = levelIndex + 1;
+
+                    if (nextLevelIndex >= totalLevels) {
+                        nextLevelIndex = 0;
+                    }
+                }
+
+                setEditingCell({ bayIndex: nextBayIndex, levelIndex: nextLevelIndex });
+            }
+        }
+    };
+
+    useEffect(() => {
+
+
+        console.log(editingCell);
+        console.log(grid?.bayColumn[editingCell.bayIndex].levels[editingCell.levelIndex]);
+
+    }, [editingCell])
+
+
     return (
         <div>
             <div className='gridControls'>
@@ -152,7 +219,14 @@ export const LayoutBuilder: React.FC = () => {
                                                     autoFocus
                                                     value={bayBox.bayName}
                                                     onChange={(e) => handleCellNameChange(bayIndex, levelIndex, e.target.value)}
-                                                    onBlur={() => setEditingCell(null)}
+                                                    // onBlur={() => setEditingCell(null)}
+                                                    onKeyDown={(e) => handleKeyDown(
+                                                        e,
+                                                        bayIndex,
+                                                        levelIndex,
+                                                        grid.bayColumn.length,
+                                                        grid.bayColumn[bayIndex].levels.length
+                                                    )}
                                                 />
 
                                             ) : (
@@ -172,6 +246,16 @@ export const LayoutBuilder: React.FC = () => {
                     </div>
                 </>
             }
-        </div>
+            {grid && editingCell &&
+                <div className='gridDataControlsContainer'>
+                    <label>Bay:</label>
+                    <span> {grid.bayColumn[editingCell.bayIndex].bayName} - {grid.bayColumn[editingCell.bayIndex].levels[editingCell.levelIndex].bayName}</span>
+                    <br />
+                    <label>Positions:</label>
+                    <span> {grid.bayColumn[editingCell.bayIndex].levels[editingCell.levelIndex].positions}</span>
+                    {/* <input type='text' placeholder={toString()}/> */}
+                </div>
+            }
+        </div >
     );
 }

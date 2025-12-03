@@ -138,7 +138,7 @@ export const LayoutBuilder: React.FC = () => {
                         {grid.bayColumn.map((bayItem, bayIndex) => (
 
                             <div className='gridBox' key={bayItem.bayId}>
-                                <div className='gridHeader' onClick={() => handleAddColumn()}>
+                                <div className='gridHeader'>
                                     {bayItem.bayName}
 
                                 </div>
@@ -148,6 +148,7 @@ export const LayoutBuilder: React.FC = () => {
                                             {editingCell?.bayIndex === bayIndex && editingCell?.levelIndex === levelIndex ? (
 
                                                 <input
+                                                    id="gridInputBox"
                                                     autoFocus
                                                     value={bayBox.bayName}
                                                     onChange={(e) => handleCellNameChange(bayIndex, levelIndex, e.target.value)}

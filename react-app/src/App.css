@@ -182,17 +182,25 @@
     overflow: hidden;
 }
 
-.bayBox input {
+/* .bayBoxEditing {
+  border: 2px solid #006eff;
+    padding: -2px;
+    margin: -2px;
+} */
+
+#gridInputBox {
     width: 40px;
     height: 40px;
-    border: 1px solid #ddd;
-    padding: 3px;
-    margin: 0;
+    border: 2px solid #006eff !important;
+    padding: -2px !important;
+    margin: -2px !important;
     box-sizing: border-box;
     font-size: inherit;
     text-align: center;
     flex-shrink: 0;
 }
+
+
 
 .addColumn {
     display: flex;

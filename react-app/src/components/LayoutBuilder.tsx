@@ -4,7 +4,8 @@ import { Button } from '@fluentui/react-components';
 
 export const LayoutBuilder: React.FC = () => {
     const [grid, setGrid] = useState<GridType>();
-    const [stackLevel, setStackLevel] = useState(2);
+    const [stackLevel, setStackLevel] = useState(1);
+    const [editingCell, setEditingCell] = useState<{ bayIndex: number; levelIndex: number } | null>(null);
 
     useEffect(() => {
         const data: GridType = {
@@ -78,7 +79,7 @@ export const LayoutBuilder: React.FC = () => {
             const newLevel = {
                 id: Math.max(...prevState.bayColumn.flatMap(b => b.levels.map(l => l.id))) + 1,
                 level: stackLevel,
-                bayName: "New",
+                bayName: "A",
                 positions: 2
             };
 
@@ -87,6 +88,27 @@ export const LayoutBuilder: React.FC = () => {
                 bayColumn: prevState.bayColumn.map((bay, index) =>
                     index === bayIndex
                         ? { ...bay, levels: [...bay.levels, newLevel] }
+                        : bay
+                )
+            };
+        });
+    };
+
+    const handleCellNameChange = (bayIndex: number, levelIndex: number, newName: string) => {
+        setGrid(prevState => {
+            if (!prevState) return prevState;
+            return {
+                ...prevState,
+                bayColumn: prevState.bayColumn.map((bay, bIdx) =>
+                    bIdx === bayIndex
+                        ? {
+                            ...bay,
+                            levels: bay.levels.map((level, lIdx) =>
+                                lIdx === levelIndex
+                                    ? { ...level, bayName: newName }
+                                    : level
+                            )
+                        }
                         : bay
                 )
             };
@@ -120,14 +142,25 @@ export const LayoutBuilder: React.FC = () => {
                                     {bayItem.bayName}
 
                                 </div>
-                                {bayItem.levels.map((bayBox) => (
-                                    bayBox.level == stackLevel &&
+                                {bayItem.levels.map((bayBox, levelIndex) => (
+                                    bayBox.level === stackLevel && (
+                                        <div key={bayBox.id} className='bayBox'>
+                                            {editingCell?.bayIndex === bayIndex && editingCell?.levelIndex === levelIndex ? (
 
-                                    <div className='bayBox' key={bayBox.id}>
-                                        {bayBox.bayName}
-                                    </div>
+                                                <input
+                                                    autoFocus
+                                                    value={bayBox.bayName}
+                                                    onChange={(e) => handleCellNameChange(bayIndex, levelIndex, e.target.value)}
+                                                    onBlur={() => setEditingCell(null)}
+                                                />
 
-
+                                            ) : (
+                                                <div onClick={() => setEditingCell({ bayIndex, levelIndex })}>
+                                                    {bayBox.bayName}
+                                                </div>
+                                            )}
+                                        </div>
+                                    )
                                 ))}
                                 <button onClick={() => handleAddRow(bayIndex)}>+</button>
                             </div>

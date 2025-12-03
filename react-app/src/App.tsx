@@ -11,6 +11,7 @@ import { GetMockData } from './components/GetMockData';
 import { ButtonsBox } from './components/ButtonsBox';
 import { TableGrid } from './components/TableGrid';
 import { Button } from '@fluentui/react-components';
+import { LayoutBuilder } from './components/LayoutBuilder';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
 
   useEffect(() => {
     console.log('Records useEffect', records);
-  },[records])
+  }, [records])
 
 
   const handleGrid = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -52,24 +53,27 @@ function App() {
   return (
     <div className='primaryContainer'>
 
-      <h5>BCinReact</h5>
       {/* <GetMockData /> */}
       <div className='secondaryContainer'>
-        <div className='gridBox' style={{width: '100%', height: '100%'}}>
-          <Button onClick={handleTriggerBC}>Trigger BC</Button>
-        <form>
-          <label>Enter Table Number for datagrid</label>
-          <input type='text' value={tableNumber.toString()} onChange={(e) => setTableNumber(Number(e.target.value))} />
-          <label>Max Records</label>
-          <input type='text' value={maxRecords.toString()} onChange={(e) => setMaxRecords(Number(e.target.value))} />
-          <button type='submit' onClick={handleGrid}>Go</button>
-        </form>
+        <div className='gridBox' style={{ width: '100%', height: '100%' }}>
+          {/* <Button onClick={handleTriggerBC}>Trigger BC</Button> */}
+          {/* <form>
+            <label>Enter Table Number for datagrid</label>
+            <input type='text' value={tableNumber.toString()} onChange={(e) => setTableNumber(Number(e.target.value))} />
+            <label>Max Records</label>
+            <input type='text' value={maxRecords.toString()} onChange={(e) => setMaxRecords(Number(e.target.value))} />
+            <button type='submit' onClick={handleGrid}>Go</button>
+          </form>
         </div>
-        <div style={{ border: '1px solid pink'}}>
-        {records &&
-          <TableGrid records={records} setRecords={setRecords} />
-        }
+        <div style={{ border: '1px solid pink' }}>
+          {records &&
+            <TableGrid records={records} setRecords={setRecords} />
+          } */}
         </div>
+      </div>
+
+      <div className='warehouseGridContainer'>
+        <LayoutBuilder />
       </div>
 
       {/* <BinContent records={records} setRecords={setRecords} /> */}

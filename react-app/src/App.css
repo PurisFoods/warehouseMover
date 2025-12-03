@@ -136,4 +136,62 @@
   color: whitesmoke;
   border: 1px solid lightblue;
 }
+
+.gridControls {
+  display: flex;
+  width: 100%;
+  min-height: 30px;
+  background: rgba(2, 110, 29, 0.85)
+}
+
+.gridTemplateBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 10px;
+  width: fit-content;
+  border: 1px solid darkgray;
+}
+
+.gridBox {
+  display: flex;
+  flex-direction: column;
+  gap:4px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gridHeader {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #e8e8e8;
+    position: relative;
+}
+
+.bayBox {
+    padding: 3px;
+    border: 1px solid #ddd;
+    text-align: center;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addColumn {
+    display: flex;
+    align-self: flex-start;
+}
+
+.addColumn button {
+  min-height: 40px;
+  min-width: 40px;
+}
+
+
+
+
 }

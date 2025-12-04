@@ -16,7 +16,7 @@ import { LayoutBuilder } from './components/LayoutBuilder';
 
 function App() {
   const [records, setRecords] = useState<RecordsState>();
-  const [tableNumber, setTableNumber] = useState<number>(37);
+  const [tableNumber, setTableNumber] = useState<number>(27);
   const [maxRecords, setMaxRecords] = useState<number>(5);
 
   useEffect(() => {
@@ -53,11 +53,11 @@ function App() {
   return (
     <div className='primaryContainer'>
 
-      {/* <GetMockData /> */}
+      <GetMockData />
       <div className='secondaryContainer'>
         <div className='gridBox' style={{ width: '100%', height: '100%' }}>
-          {/* <Button onClick={handleTriggerBC}>Trigger BC</Button> */}
-          {/* <form>
+          <Button onClick={handleTriggerBC}>Trigger BC</Button>
+          <form>
             <label>Enter Table Number for datagrid</label>
             <input type='text' value={tableNumber.toString()} onChange={(e) => setTableNumber(Number(e.target.value))} />
             <label>Max Records</label>
@@ -68,13 +68,13 @@ function App() {
         <div style={{ border: '1px solid pink' }}>
           {records &&
             <TableGrid records={records} setRecords={setRecords} />
-          } */}
+          }
         </div>
       </div>
 
-      <div className='warehouseGridContainer'>
+      {/* <div className='warehouseGridContainer'>
         <LayoutBuilder />
-      </div>
+      </div> */}
 
       {/* <BinContent records={records} setRecords={setRecords} /> */}
 

@@ -189,7 +189,7 @@ codeunit 50260 JsonHelper
         KeyRef := RecRef.KeyIndex(1);
         for i := 1 to KeyRef.FieldCount() do begin
             FieldRef := KeyRef.FieldIndex(i);
-            PrimaryKey.Add(FieldRef.Name);
+            PrimaryKey.Add(DelChr(FieldRef.Name(), '=', ' /.-*+'));  // <-- Clean it here
         end;
         Header.Add('primaryKeyFields', PrimaryKey);
 

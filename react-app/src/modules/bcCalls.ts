@@ -10,27 +10,21 @@ export const updateRow = async (
   tableData: TableMetaData,
   rowData: TableRecord
 ) => {
-
   console.log('isDev', isDevEnv());
-  
   if (isDevEnv()) {
     return;
   }
 
-  const data: RecordsState = [tableData, rowData];
-  let success: boolean = false;
+  const tableNumber = tableData.tableNumber;
+  const primaryKeyFields = tableData; // e.g., ['Document Type', 'Document No.', 'Line No.']
 
-  console.log('UpdateRow data', data);
-  console.log(typeof data);
+  const parsedRowData = JSON.stringify([tableData, rowData]);
+  console.log('ParsedRowData', parsedRowData);
 
-  // ! Function call is silently failing on the AL side due to data mismatch
-  Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('UpdateRow', [tableData, rowData]);
-  // Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('ReceiveDataFromReact', [data]);
-    // Microsoft.Dynamics.NAV.InvokeExtensibilityMethod('ReceiveDataFromReact', ["message from react - blargh!"]);
-
-  if (success) {
-    console.log('Row updated in BC');
-  } else console.error('Row failed to update in BC');
+  Microsoft.Dynamics?.NAV?.InvokeExtensibilityMethod('UpdateRow', [
+    tableNumber,
+    parsedRowData,
+  ]);
 };
 
 export const getTableData = async (
@@ -69,7 +63,7 @@ export const getTableData = async (
         });
       }
       console.log('MaxRecords', maxRecords);
-      if (maxRecords === 0){
+      if (maxRecords === 0) {
         maxRecords = data.length;
         console.log(data.length);
       }

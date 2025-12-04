@@ -18,7 +18,7 @@ page 50260 "WarehouseMover"
 
                 trigger UpdateRow(tableNumber: Integer; rowData: Text)
                 begin
-                    Message('Table number %1 - rowData %2', tableNumber, rowData);
+                    // Message('Table number %1 - rowData %2', tableNumber, rowData);
                     ReactTableManagement.runUpdatesFromReact(tableNumber, rowData);
                 end;
 
@@ -65,15 +65,12 @@ page 50260 "WarehouseMover"
 
                 trigger OnAction();
                 var
-                    purisUsers: Record PurisUsers;
                     tableSelection: RecordRef;
                     RecRef: RecordRef;
                     jsonArray: JsonArray;
                     data: Text;
                     jsonHelper: Codeunit JsonHelper;
                 begin
-                    tableSelection.Open(Database::PurisUsers);
-                    RecRef.Open(Database::PurisUsers);
                     jsonArray.Add(jsonHelper.RecordsToJsonArrayWithHeader(RecRef, 0));
                     jsonArray.WriteTo(data);
                     CurrPage.WarehouseMover.SendDataToReact(data);
@@ -87,34 +84,10 @@ page 50260 "WarehouseMover"
                 var
                     RecRef: RecordRef;
                 begin
-                    RecRef.Open(Database::PurisUsers);
-                    if RecRef.FindSet() then begin
-                        RecRef.DeleteAll();
-                    end;
                 end;
             }
         }
     }
     var
         ReactTableManagement: Codeunit ReactTableManagement;
-
-    // local procedure ProcessJsonObject(JsonObject: JsonObject): Text
-    // var
-    //     Keys: List of [Text];
-    //     JsonToken: JsonToken;
-    //     i: Integer;
-    //     ObjectText: Text;
-    // begin
-    //     Keys := JsonObject.Keys();
-    //     ObjectText := '';
-
-    //     for i := 1 to Keys.Count() do begin
-    //         JsonObject.Get(Keys.Get(i), JsonToken);
-    //         ObjectText += Keys.Get(i) + ': ' + JsonToken.AsValue().AsText();
-    //         if i < Keys.Count() then
-    //             ObjectText += ', ';
-    //     end;
-
-    //     exit(ObjectText);
-    // end;
 }

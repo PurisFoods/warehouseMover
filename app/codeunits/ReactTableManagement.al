@@ -5,11 +5,10 @@ codeunit 50261 ReactTableManagement
         RecRef: RecordRef;
         jsonArray: JsonArray;
         jsonToken: JsonToken;
-        tableNameToken: JsonToken;
+        headerObject: JsonObject;
+        primaryKeyFields: JsonArray;
         i: Integer;
-    // tableNumber: Integer;
     begin
-        // Parse the JSON array from React
         if not jsonArray.ReadFrom(JsonArrayString) then begin
             Error('Failed to parse JSON from React');
         end;
@@ -17,60 +16,113 @@ codeunit 50261 ReactTableManagement
             Error('No records to update');
         end;
 
+        // Get header (metadata) from first object
+        jsonArray.Get(0, jsonToken);
+        headerObject := jsonToken.AsObject();
 
-        jsonToken.AsObject().Get('name', tableNameToken);
-        // tableNumber := GetTableNumberFromName(tableNameToken.AsValue().AsText());
+        // Extract primaryKeyFields from header
+        if not headerObject.Get('primaryKeyFields', jsonToken) then begin
+            Error('primaryKeyFields not found in header');
+        end;
+        primaryKeyFields := jsonToken.AsArray();
 
         RecRef.Open(tableNumber);
-        // Process each record
-        for i := 0 to jsonArray.Count() - 1 do begin
+
+        // Process data records (starting at index 1)
+        for i := 1 to jsonArray.Count() - 1 do begin
             jsonArray.Get(i, jsonToken);
-            UpdateOrInsertRecord(RecRef, jsonToken.AsObject());
+            UpdateOrInsertRecord(RecRef, jsonToken.AsObject(), primaryKeyFields);
         end;
+
         RecRef.Close();
         Message('Records updated successfully');
     end;
 
-    local procedure UpdateOrInsertRecord(var RecRef: RecordRef; jsonObject: JsonObject)
+    local procedure UpdateOrInsertRecord(var RecRef: RecordRef; jsonObject: JsonObject; primaryKeyFields: JsonArray)
     var
-        recordLine: Integer;
         jsonToken: JsonToken;
-        valueToken: JsonToken;
+        valueToken: JsonValue;
         fieldRef: FieldRef;
-        fieldsArray: JsonArray;
+        cleanedFieldName: Text;
+        originalFieldName: Text;
+        primaryKeyValue: Text;
     begin
-        // Get record line from primaryKey.fields[0].value
-        if not jsonObject.Get('primaryKey', jsonToken) then
-            Error('primaryKey field is required');
+        // Get first primary key field name from the passed array
+        primaryKeyFields.Get(0, jsonToken);
+        cleanedFieldName := jsonToken.AsValue().AsText();
 
-        if not jsonToken.AsObject().Get('fields', jsonToken) then
-            Error('fields array not found in primaryKey');
+        // Find the original BC field name
+        originalFieldName := FindOriginalFieldName(RecRef, cleanedFieldName);
+        if originalFieldName = '' then
+            Error('Could not find original field name for: ' + cleanedFieldName);
 
-        fieldsArray := jsonToken.AsArray();
-        fieldsArray.Get(0, jsonToken);
+        // Get the value using the cleaned field name from JSON
+        if not jsonObject.Get(cleanedFieldName, jsonToken) then
+            Error('Primary key field ' + cleanedFieldName + ' not found in data');
 
-        if not jsonToken.AsObject().Get('value', valueToken) then
-            Error('value not found in primaryKey field');
+        valueToken := jsonToken.AsValue();
+        primaryKeyValue := valueToken.AsText();
 
-        recordLine := valueToken.AsValue().AsInteger();
-
-        // Find record using primary key
-        fieldRef := RecRef.FieldIndex(1);
-        fieldRef.SetRange(recordLine);
+        // Find the field by original name and set the range
+        fieldRef := RecRef.Field(RecRef.FieldIndex(1).Number());
+        fieldRef.SetRange(primaryKeyValue);
 
         if RecRef.FindFirst() then begin
             // Update existing record
-            UpdateRecordFields(RecRef, jsonObject);
+            UpdateRecordFromJson(RecRef, jsonObject);
             if not RecRef.Modify(true) then
                 Error('Failed to modify record');
         end else begin
             // Insert new record
             RecRef.Init();
-            fieldRef.Value := recordLine;
-            SetRecordFields(RecRef, jsonObject);
+            fieldRef.Value := primaryKeyValue;
+            UpdateRecordFromJson(RecRef, jsonObject);
             if not RecRef.Insert(true) then
                 Error('Failed to insert record');
         end;
+    end;
+
+    local procedure UpdateRecordFromJson(var RecRef: RecordRef; jsonObject: JsonObject)
+    var
+        i: Integer;
+        fieldRef: FieldRef;
+        jsonToken: JsonToken;
+        cleanedFieldName: Text;
+        originalFieldName: Text;
+    begin
+        // Iterate through all fields in the record
+        for i := 1 to RecRef.FieldCount do begin
+            fieldRef := RecRef.FieldIndex(i);
+
+            // Skip system fields
+            if fieldRef.Class() <> FieldClass::Normal then
+                continue;
+
+            // Create cleaned version of the BC field name to match React's naming
+            cleanedFieldName := DelChr(fieldRef.Name(), '=', ' /.-*+');
+
+            // Try to get the value from JSON using the cleaned name
+            if jsonObject.Get(cleanedFieldName, jsonToken) then begin
+                if not jsonToken.AsValue().IsNull() then begin
+                    SetFieldValue(fieldRef, jsonToken.AsValue());
+                end;
+            end;
+        end;
+    end;
+
+    local procedure FindOriginalFieldName(RecRef: RecordRef; CleanedName: Text): Text
+    var
+        i: Integer;
+        fieldRef: FieldRef;
+        cleanedFieldName: Text;
+    begin
+        for i := 1 to RecRef.FieldCount do begin
+            fieldRef := RecRef.FieldIndex(i);
+            cleanedFieldName := DelChr(fieldRef.Name(), '=', ' /.-*+');
+            if cleanedFieldName = CleanedName then
+                exit(fieldRef.Name());
+        end;
+        exit('');
     end;
 
     local procedure UpdateRecordFields(var RecRef: RecordRef; jsonObject: JsonObject)
@@ -152,14 +204,35 @@ codeunit 50261 ReactTableManagement
     end;
 
     local procedure SetFieldValue(var fieldRef: FieldRef; jsonValue: JsonValue)
+    var
+        optionValue: Integer;
+        success: Boolean;
     begin
         case fieldRef.Type() of
-            FieldType::Integer, FieldType::BigInteger:
+            FieldType::Integer:
                 fieldRef.Value := jsonValue.AsInteger();
+            FieldType::BigInteger:
+                fieldRef.Value := jsonValue.AsBigInteger();
             FieldType::Decimal:
                 fieldRef.Value := jsonValue.AsDecimal();
             FieldType::Boolean:
                 fieldRef.Value := jsonValue.AsBoolean();
+            FieldType::Code:
+                fieldRef.Value := jsonValue.AsCode();
+            FieldType::Date:
+                begin
+                end;
+            //     fieldRef.Value := jsonValue.AsDate();
+            FieldType::DateTime:
+                begin
+                end;
+            //     fieldRef.Value := jsonValue.AsDateTime();
+            FieldType::Option:
+                begin
+                    // Message(format(fieldRef.Value));
+                    if Evaluate(optionValue, jsonValue.AsText()) then
+                        fieldRef.Value := optionValue
+                end;
             else
                 fieldRef.Value := jsonValue.AsText();
         end;

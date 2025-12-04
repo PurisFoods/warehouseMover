@@ -208,6 +208,7 @@ codeunit 50261 ReactTableManagement
         optionValue: Integer;
         success: Boolean;
     begin
+        Message('%1 - %2', format(fieldRef), format(jsonValue));
         case fieldRef.Type() of
             FieldType::Integer:
                 fieldRef.Value := jsonValue.AsInteger();
@@ -229,9 +230,9 @@ codeunit 50261 ReactTableManagement
             //     fieldRef.Value := jsonValue.AsDateTime();
             FieldType::Option:
                 begin
-                    // Message(format(fieldRef.Value));
-                    if Evaluate(optionValue, jsonValue.AsText()) then
-                        fieldRef.Value := optionValue
+                    // // Message(format(fieldRef.Value));
+                    // if Evaluate(optionValue, jsonValue.AsText()) then
+                    //     fieldRef.Value := optionValue
                 end;
             else
                 fieldRef.Value := jsonValue.AsText();

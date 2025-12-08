@@ -5,12 +5,6 @@ import { GridBuilder } from './GridBuilder';
 
 export const LayoutBuilder: React.FC = () => {
     const [grid, setGrid] = useState<GridType>();
-    const [stackLevel, setStackLevel] = useState(1);
-    const [editingCell, setEditingCell] = useState<{ bayIndex: number; levelIndex: number } | null>(null);
-
-
-
-
 
 
     return (

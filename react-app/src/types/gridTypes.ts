@@ -1,3 +1,11 @@
+export interface Layout {
+  layoutId: number;
+  layoutName: string;
+  totalRows: number;
+  totalCols: number;
+  grids: GridType[];
+}
+
 export interface GridType {
   locationId: number;
   location: string;
@@ -17,6 +25,8 @@ export interface BayType {
 
 export interface LevelsType {
   id: number;
+  rowSpan: number;
+  colSpan: number;
   level: number;
   bayName: string;
   positions: number;

@@ -26,24 +26,32 @@ export const GridBuilder = ({ grid, setGrid }) => {
                     "levels": [
                         {
                             "id": 1,
+                            rowSpan: 1,
+                            colSpan: 1,
                             "level": 1,
                             "bayName": "A7",
                             "positions": 2
                         },
                         {
                             "id": 2,
+                            rowSpan: 1,
+                            colSpan: 1,
                             "level": 1,
                             "bayName": "A6",
                             "positions": 2
                         },
                         {
                             "id": 3,
+                            rowSpan: 1,
+                            colSpan: 1,
                             "level": 1,
                             "bayName": "A5",
                             "positions": 2
                         },
                         {
                             "id": 4,
+                            rowSpan: 1,
+                            colSpan: 1,
                             "level": 2,
                             "bayName": "B7",
                             "positions": 1
@@ -155,16 +163,21 @@ export const GridBuilder = ({ grid, setGrid }) => {
 
                 console.log('prevBayIndex', prevBayIndex);
                 console.log('prevLevelIndex', prevLevelIndex);
+                console.log('totalBays', totalBays);
+                console.log('totalLevels', totalLevels, typeof totalLevels);
 
-                if (prevBayIndex <= 0) {
+
+                if (prevBayIndex < 0) {
+                    console.log('triggered prevBayIndex < 0');
+
                     prevBayIndex = totalBays;
-                    prevLevelIndex = levelIndex;
-
-                    if (prevLevelIndex <= 0) {
-                        prevLevelIndex = totalLevels;
-                    }
+                    prevLevelIndex = levelIndex - 1;
                 }
+                if (prevLevelIndex < 0) {
+                    console.log('triggered prevLevelIndex < 0');
 
+                    prevLevelIndex = totalLevels - 1;
+                }
                 setEditingCell({ bayIndex: prevBayIndex, levelIndex: prevLevelIndex });
             } else {
                 // Move to next bay, or to start of next level if at end of row
@@ -233,7 +246,7 @@ export const GridBuilder = ({ grid, setGrid }) => {
                                                         bayIndex,
                                                         levelIndex,
                                                         grid.bayColumn.length,
-                                                        grid.stacks
+                                                        bayItem.levels.length - 1
                                                     )}
                                                 />
 

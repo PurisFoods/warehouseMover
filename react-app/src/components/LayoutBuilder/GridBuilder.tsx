@@ -1,9 +1,12 @@
-import React, { useState, useEffect, use } from 'react';
-import type { BayType, GridType } from '../types/gridTypes';
-import { Button } from '@fluentui/react-components';
+import { useState, useEffect } from "react";
+import type { GridType, BayType } from "../../types/gridTypes"
 
-export const LayoutBuilder: React.FC = () => {
-    const [grid, setGrid] = useState<GridType>();
+interface GridBuilderProps {
+    grid: GridType,
+    setGrid: Function
+}
+
+export const GridBuilder = ({ grid, setGrid }) => {
     const [stackLevel, setStackLevel] = useState(1);
     const [editingCell, setEditingCell] = useState<{ bayIndex: number; levelIndex: number } | null>(null);
 
@@ -51,6 +54,7 @@ export const LayoutBuilder: React.FC = () => {
         }
         setGrid(data);
     }, []);
+
 
     const handleAddColumn = () => {
         if (!grid) return;
@@ -115,6 +119,11 @@ export const LayoutBuilder: React.FC = () => {
         });
     };
 
+    useEffect(() => {
+        console.log(editingCell);
+        console.log(grid?.bayColumn[editingCell.bayIndex].levels[editingCell.levelIndex]);
+    }, [editingCell])
+
     const handleKeyDown = (
         e: React.KeyboardEvent<HTMLInputElement>,
         bayIndex: number,
@@ -144,12 +153,15 @@ export const LayoutBuilder: React.FC = () => {
                 let prevBayIndex: number = bayIndex - 1;
                 let prevLevelIndex: number = levelIndex;
 
-                if (prevBayIndex < 0) {
-                    prevBayIndex = totalBays - 1;
-                    prevLevelIndex = levelIndex - 1;
+                console.log('prevBayIndex', prevBayIndex);
+                console.log('prevLevelIndex', prevLevelIndex);
 
-                    if (prevLevelIndex < 0) {
-                        prevLevelIndex = totalLevels - 1;
+                if (prevBayIndex <= 0) {
+                    prevBayIndex = totalBays;
+                    prevLevelIndex = levelIndex;
+
+                    if (prevLevelIndex <= 0) {
+                        prevLevelIndex = totalLevels;
                     }
                 }
 
@@ -159,34 +171,30 @@ export const LayoutBuilder: React.FC = () => {
                 let nextBayIndex: number = bayIndex + 1;
                 let nextLevelIndex: number = levelIndex;
 
+                console.log('nextBayIndex', nextBayIndex);
+                console.log('totalBays', totalBays);
+                console.log('nextrLevelIndex', nextLevelIndex, typeof nextLevelIndex);
+                console.log('totalLevels', totalLevels, typeof totalLevels);
+
                 if (nextBayIndex >= totalBays) {
+                    console.log('triggered nextbayIndex > totalBays');
                     nextBayIndex = 0;
                     nextLevelIndex = levelIndex + 1;
-
-                    if (nextLevelIndex >= totalLevels) {
-                        nextLevelIndex = 0;
-                    }
                 }
+                if (nextLevelIndex > totalLevels) {
+                    console.log('triggered next level > total')
+                    nextLevelIndex = 0;
+                }
+
 
                 setEditingCell({ bayIndex: nextBayIndex, levelIndex: nextLevelIndex });
             }
         }
     };
 
-    useEffect(() => {
-
-
-        console.log(editingCell);
-        console.log(grid?.bayColumn[editingCell.bayIndex].levels[editingCell.levelIndex]);
-
-    }, [editingCell])
-
 
     return (
         <div>
-            <div className='gridControls'>
-                <Button appearance='primary'>Create Grid</Button>
-            </div>
             {grid &&
                 <>
                     <div className='gridHeader'>
@@ -225,7 +233,7 @@ export const LayoutBuilder: React.FC = () => {
                                                         bayIndex,
                                                         levelIndex,
                                                         grid.bayColumn.length,
-                                                        grid.bayColumn[bayIndex].levels.length
+                                                        grid.stacks
                                                     )}
                                                 />
 
@@ -256,6 +264,6 @@ export const LayoutBuilder: React.FC = () => {
                     {/* <input type='text' placeholder={toString()}/> */}
                 </div>
             }
-        </div >
-    );
+        </div>
+    )
 }

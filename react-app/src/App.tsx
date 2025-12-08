@@ -11,7 +11,7 @@ import { GetMockData } from './components/GetMockData';
 import { ButtonsBox } from './components/ButtonsBox';
 import { TableGrid } from './components/TableGrid';
 import { Button } from '@fluentui/react-components';
-import { LayoutBuilder } from './components/LayoutBuilder';
+import { LayoutBuilder } from './components/LayoutBuilder/LayoutBuilder';
 
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
   return (
     <div className='primaryContainer'>
 
-      <GetMockData />
+      {/* <GetMockData />
       <div className='secondaryContainer'>
         <div className='gridBox' style={{ width: '100%', height: '100%' }}>
           <Button onClick={handleTriggerBC}>Trigger BC</Button>
@@ -70,11 +70,11 @@ function App() {
             <TableGrid records={records} setRecords={setRecords} />
           }
         </div>
-      </div>
-
-      {/* <div className='warehouseGridContainer'>
-        <LayoutBuilder />
       </div> */}
+
+      <div className='warehouseGridContainer'>
+        <LayoutBuilder />
+      </div>
 
       {/* <BinContent records={records} setRecords={setRecords} /> */}
 

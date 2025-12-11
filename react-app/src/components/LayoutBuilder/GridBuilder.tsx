@@ -245,7 +245,7 @@ export const GridBuilder = ({ grid, setGrid }) => {
                                                         e,
                                                         bayIndex,
                                                         levelIndex,
-                                                        grid.bayColumn.length,
+                                                        grid.bayColumn.length - 1,
                                                         bayItem.levels.length - 1
                                                     )}
                                                 />
